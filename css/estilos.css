@@ -1,0 +1,613 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header" "main" "footer";
+}
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "navHeader"
+        "navIndex";
+    grid-area: header;
+}
+
+.navHeader {
+    display: flex;
+    /* width: 1900px; */
+    grid-area: navHeader;
+    justify-content: space-around;
+}
+
+.navIndex {
+    grid-area: navIndex;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+
+
+/* HEADER */
+/* MENU HORIZONTAL DE CONTACTO RAPIDO */
+.navHeader {
+    background-color: rgb(62, 61, 61);
+    padding-bottom: 8px;
+    font-size: 20px;
+}
+
+.sectorIzquierdo {
+    margin-right: 292px;
+    width: 382px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.link_mail {
+    display: inline;
+    color: white;
+}
+
+.link_direccion {
+    display: inline;
+    color: rgb(255, 255, 255);
+}
+
+.telefono {
+    display: inline-block;
+    color: white;
+}
+
+/* NAVEGACION ENTRE SECCIONES Y NOMBRE DEL NEGOCIO */
+.navIndex {
+    display: flex;
+    margin-top: 11px;
+    padding-bottom: 11px;
+    background-color: white;
+    text-transform: uppercase;
+    grid-area: navIndex;
+    justify-content: space-around;
+}
+
+.navIndex p {
+    font-size: 20px;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.listaPadre {
+    display: inline;
+}
+
+.lista {
+    list-style: none;
+    color: black;
+    display: inline;
+    word-spacing: 25px;
+}
+
+.link_activo {
+    font-weight: bold;
+}
+
+.lista__link {
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.lista__link__efecto:hover {
+    color: grey;
+    text-decoration: transparent;
+}
+
+/* MAIN */
+/* IMAGEN DE PORTADA CON TITULO */
+.divMainImagen {
+    height: 300px;
+}
+
+.section_descriptivo_noticias {
+    background-image: url(../img/fondoPce.jpg);
+    background-position: center;
+    background-size: cover
+}
+
+.section_descriptivo {
+    height: 300px;
+    display: flex;
+    /* background-image: url(../img/fotoCodigo.jpg); */
+    background-size: cover;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    height: 272px;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.section_descriptivo_index_background{
+    background-image: url(../img/fotoCodigo.jpg);
+
+}
+
+.section_descriptivo h1 {
+    font-size: 40px;
+}
+
+.section_descriptivo p {
+    font-size: 20px;
+}
+
+.section_descriptivo_servicios {
+    background-image: url(../img/cableadoEdit.jpeg);
+    background-size: cover;
+    height: 300px;
+}
+
+
+/* DESCRIPCION DE NEGOCIO */
+.divMainDescripcion {
+    display: flex;
+    background-color: rgb(240, 239, 239);
+    padding-top: 44px;
+    padding-bottom: 56px;
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+}
+
+.divMainDescripcion h4 {
+    font-weight: normal;
+    font-size: 25px;
+    color: rgb(88, 85, 85);
+    text-decoration: underline;
+    line-height: 0;
+}
+
+/* TITULO DE SERVICIOS */
+.main_titulo_servicios {
+    grid-area: titulo;
+    font-weight: normal;
+    color: rgb(88, 85, 85);
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    border-width: 2px;
+    text-decoration: underline;
+}
+
+/*SERVICIOS, IMAGENES CIRCULARES Y DESCRIPCIONES  */
+.main_div_servicios {
+    display: grid;
+    grid-template-rows: 62px 337px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "titulo titulo titulo""componentes pc codigo";
+    justify-items: center;
+    padding-top: 41px;
+}
+
+/* ESTILO IMAGEN IZQUIERDA Y ESTILOS EN COMUN*/
+.vistaIzquierda {
+    grid-area: componentes;
+    display: inline-block;
+}
+
+.imgServicios {
+    display: inline-block;
+    height: 239px;
+    width: 239px;
+    border-radius: 50%;
+    border: solid 3px rgb(121, 119, 119);
+}
+
+.descripcion {
+    font-size: 25px;
+    display: inline-block;
+    color: rgb(88, 85, 85);
+    text-align: center;
+    font-weight: normal;
+}
+
+/* ESTILO IMAGEN DEL CENTRO */
+.vistaCentro {
+    grid-area: pc;
+    display: inline-block;
+}
+
+
+/* ESTILO IMAGEN DERECHA */
+.vistaDerecha {
+    grid-area: codigo;
+    display: inline-block;
+
+}
+
+
+/* ESTILO CIERRE DEL MAIN, IMAGEN CON TEXTO BREVE Y FONDO POCO VISIBLE */
+.main_section_cierre {
+    display: flex;
+    background-image: url(../img/oficinaE.jpg);
+    background-position: center;
+    background-size: 1550px;
+    background-color: black;
+    height: 250px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_section_cierre h3 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* FOOTER */
+/* APLIQUE UN FONDO GENERAL PORQUE DESPUES APLICANDO MARGENES LO PERDIA */
+.fondo {
+    background: rgb(240, 239, 239);
+}
+
+.footer_general {
+    text-align: center;
+    background-color: rgb(240, 239, 239);
+    display: flex;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: space-evenly;
+}
+
+/* ESTILO DEL APARTADO CON DATOS DE CONTACTO */
+.footer_contacto {
+    text-align: left;
+}
+
+.parteIzquierda {
+    display: inline-block;
+}
+
+/* ESTILOS PARA LOS SUBTITULOS Y TEXTOS EN COMUN */
+.estilos_contacto {
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.subrayado {
+    border-bottom: solid 2px rgb(88, 85, 85);
+}
+
+/* ESTILOS PARA LA PARTE DONDE ESTA EL FORMULARIO */
+.parteDerecha {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+
+.comentario {
+    display: block;
+    height: 44px;
+    width: 348px;
+    resize: none;
+}
+
+.btn_confirmar {
+    display: block;
+    margin-left: 115px;
+    padding-left: 37px;
+    padding-right: 37px;
+    margin-top: 10px;
+}
+
+/* LOGOS FINALES */
+.div_logos li {
+    display: inline;
+}
+
+/* ESTILOS PARA SECCION SERVICIOS */
+
+.listado_servicios {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "foto_partes descripcion_partes"
+        "foto_pcNegra descripcion_pcNegra"
+        "foto_codigo descripcion_codigo";
+    height: 1181px;
+    background-color: rgb(240, 239, 239);
+    padding-top: 65px;
+    padding-left: 65px;
+    align-items: center;
+}
+
+.servicio_fotoPartes {
+    grid-area: foto_partes;
+}
+
+.servicio_fotoPcNegra {
+    grid-area: foto_pcNegra;
+}
+
+.servicio_fotoCodigo {
+    grid-area: foto_codigo;
+}
+
+.servicio_partes {
+    grid-area: descripcion_partes;
+}
+
+.servicio_pcNegra {
+    grid-area: descripcion_pcNegra;
+}
+
+.servicio_Codigo {
+    grid-area: descripcion_codigo;
+}
+
+.alineado {
+    align-self: center;
+}
+/* ESTILO PARA SECCION NOSOTROS */
+
+.alineado_presentacion {
+    margin-top: 35px;
+    padding-left:142px;
+    padding-right: 200px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px
+}
+
+.descripcion_personal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .4fr 1fr 1fr;
+    grid-template-areas: "titulo titulo titulo""solProblemas postVenta resolucion" "respuestas seguimiento none";
+    background-color: rgb(240, 239, 239);
+    height: 351px;
+    margin-left: 142px;
+    margin-right: 190px;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.titulo_descripcion_personal {
+    grid-area: titulo;
+    justify-self: center;
+}
+
+.descripcion_solucion_problemas {
+    grid-area: solProblemas;
+}
+
+.descripcion_post_venta {
+    grid-area: postVenta;
+}
+
+.descripcion_resolucion {
+    grid-area: resolucion;
+}
+
+.descripcion_respuestas {
+    grid-area: respuestas;
+}
+
+.descripcion_seguimiento {
+    grid-area: seguimiento;
+}
+
+.alineacion_descripcion_personal {
+    text-align: center;
+}
+
+.far,
+.fas {
+    font-size: 20px;
+}
+
+.texto_normal {
+    font-weight: normal;
+}
+
+
+@media (max-width:768px) {
+    .navHeader {
+        justify-content: space-evenly;
+    }
+
+    .navIndex {
+        margin-top: 7px;
+        padding-bottom: 6px;
+    }
+
+    .sectorIzquierdo {
+        margin-right: 0;
+    }
+
+    .section_descriptivo h1 {
+        font-size: 35px;
+    }
+
+    .section_descriptivo p {
+        font-size: 15px;
+    }
+
+    .descripcion_negocio {
+        left: 44px;
+        font-size: 11px;
+        line-height: 20px;
+        top: 20px;
+    }
+
+    .divMainDescripcion h4 {
+        left: 44px;
+        width: 248px;
+        font-size: 20px;
+    }
+
+    .main_div_servicios{
+        grid-template-columns: 1fr;
+        grid-template-rows: 62px 337px 1fr 1fr;
+        grid-template-areas: "titulo" "componentes" "pc" "codigo";
+        justify-items: center;
+    }
+
+    .listado_servicios {
+        grid-template-rows: 1fr 2fr 1fr 1.5fr 1fr 1.5fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "foto_partes""descripcion_partes""foto_pcNegra""descripcion_pcNegra""foto_codigo""descripcion_codigo";
+        height: 1298px;
+        justify-items: center;
+    }
+
+    .footer_general{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .parteDerecha{
+        margin-top: 40px;
+    }
+
+    .alineado {
+        font-size: 20px;
+    }
+
+    .alineado_presentacion{
+        font-size: 17px;
+        padding-left:86px;
+        padding-right: 44px;
+        margin-right: 0;
+
+    }
+
+    .descripcion_personal{
+        margin-left: 37px;
+        margin-right: 42px;
+        width: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .4fr 1fr 1fr 1fr;
+        grid-template-areas: "titulo titulo" "solProblemas postVenta" "resolucion respuestas" "seguimiento none";
+    }
+}
+
+@media (max-width:400px) {
+    body {
+        display: grid;
+    }
+
+    .navIndex {
+        flex-wrap: wrap;
+    }
+
+    .navIndex p {
+        margin-bottom: 10px;
+        text-decoration: underline;
+    }
+
+    .listaPadre {
+        text-align: center;
+    }
+
+    .navHeader {
+        width: 375px;
+        flex-wrap: wrap;
+    }
+
+    .section_descriptivo h1 {
+        font-size: 30px;
+    }
+
+    .section_descriptivo p {
+        width: 375px;
+    }
+
+    .descripcion_negocio {
+        width: 329px;
+        left: 23px;
+    }
+
+    .listado_servicios {
+        height: 1470px;
+        justify-items: center;
+        padding-left: 0;
+    }
+
+    .alineado {
+        width: 278px;
+        font-size: 16px;
+        margin-bottom: 49px;
+        margin-top: 15px;
+
+    }
+
+    .main_div_servicios {
+        grid-template-rows: 15vh 1.2fr 1.2fr 1fr;
+        grid-template-areas: "titulo""componentes""pc""codigo";
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding-bottom: 30px;
+        padding-top: 35px;
+    }
+
+    .vistaDerecha {
+        margin-left: 28px;
+    }
+
+    .main_section_cierre h3 {
+        font-size: 15px;
+    }
+
+    .navHeader {
+        justify-content: space-evenly;
+    }
+
+    .sectorIzquierdo {
+        margin-right: 0;
+    }
+
+    .descripcion_personal{
+        margin-left: 25px;
+        width: 314px;
+        height: 579px;
+        grid-template-columns: 1fr;
+        grid-template-rows: .7fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "titulo" "solProblemas" "postVenta" "resolucion" "respuestas" "seguimiento";
+        background-color: rgb(240,239,239);
+        margin-top: 52px;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+
+    .footer_general {
+        height: 479px;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+}

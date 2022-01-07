@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Servicios</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Inicio del encabezado -->
+        <header>
+            <!-- Barra horizontal al principio de todo -->
+            <nav class="navHeader">
+                <div class="sectorIzquierdo">
+                    <a class="link telefono" href="tel:1131883213">11-3188-3213</a>
+                    <a class="link link_mail" href="mailto:matheocaneva@gmail.com"> matheocaneva@gmail.com </a>
+                </div>
+                <a class="link link_direccion"
+                    href="https://www.google.com/maps/place/Yerbal+839,+C1405+CDQ,+Buenos+Aires/@-34.6194496,-58.444727,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcca3f2f11a23f:0x8887c5b5b1f94912!8m2!3d-34.6194496!4d-58.4425383">
+                    Yerbal 839, Caballito</a>
+            </nav>
+            <!-- Navegacion entre secciones -->
+            <nav class="navIndex">
+                <p>Golden Byte</p>
+                <ul class="listaPadre">
+                    <li class="lista"><a class="lista__link  lista__link__efecto" href="index.html"> Inicio
+                        </a>
+                    </li>
+                    <li class="lista"><a class="lista__link lista__link__efecto link_activo lista__link__subitem"
+                            href="servicios.html">
+                            Servicios </a></li>
+                    <!-- <li class="lista"><a class="lista__link lista__link__efecto" href="noticias.html"> Noticias </a> -->
+                    </li>
+                    <li class="lista"><a class="lista__link lista__link__efecto" href="sobre_mi.html"> Nosotros </a>
+                    </li>
+                    <!-- <li class="lista"><a class="lista__link lista__link__efecto" href="contacto.html"> Contacto </a> -->
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article class="section_descriptivo_servicios section_descriptivo">
+                <h1>Servicios</h1>
+                <br>
+                <p>Nos destacamos en brindarte los mejores, con la mejor calidad</p>
+            </article>
+            <section class="listado_servicios">
+                <img src="./img/componentesPC.jpg" alt="componentespcNegra" class="imgServicios servicio_fotoPartes">
+                <h5 class="descripcion servicio_partes alineado">Cotización, armado y venta de PC: <br> Realizamos
+                    cotizaciones a eleccion del cliente y de forma personalizada. Buscamos brindarte la mejor atencion y
+                    al
+                    mejor precio, eligiendo los componentes ideales que se adapten a tu presupuesto y a tus necesidades.
+                    <br>
+                    La entrega de la PC se efectúa en un plazo de 7 a 10 días hábiles desde el momento en que se efectúa
+                    el
+                    pago de la misma.
+                </h5>
+                <img src="./img/pcNegra.jpg" alt="pcNegra" class="imgServicios servicio_fotoPcNegra">
+                <h5 class="descripcion servicio_pcNegra alineado">Mantenimiento de Equipos Informaticos: <br> Realizamos
+                    arreglos y limpiezas a medida, examinando todos los rincones del equipo y optiminzandolo para
+                    obtener
+                    mejoras de rendimiento y mayor velocidad, evitando altas temperaturas e inconvenientes a futuro.
+                </h5>
+                <img src="./img/codigo-html.jpg" alt="codigo" class="imgServicios servicio_fotoCodigo">
+                <h5 class="descripcion servicio_Codigo alineado"> Desarrollo de Páginas Web para todos los rubros: <br>
+                    Disponemos de un equipo preparado para diseñar y desarrollar tu página web en base a tus
+                    requerimientos.
+                    Tenemos dos formas de hacerlo, eligiendo una de nuestras páginas prediseñadas o elaborada desde
+                    cero.
+                </h5>
+            </section>
+            <section class="main_section_cierre">
+                <h3>Atencion Personalizada, Presupuestos sin cargo, Seguimiento del problema hasta resolverlo, <br>
+                    Garantia de calidad, Servicio Post Operacion</h3>
+            </section>
+        </main>
+        <footer>
+            <!-- Aplico un fondo general -->
+            <div class="footer_general">
+                <!-- Parte izquierda con datos de contacto -->
+                <div class="footer_contacto parteIzquierda">
+                    <h2 class="estilos_contacto subrayado">Datos de Contacto</h2>
+                    <h4 class="estilos_contacto">Telefono</h5>
+                        <a class="link" href="tel:1131883213">11-3188-3213</a>
+                        <h4 class="estilos_contacto">Email</h5>
+                            <a class="link" href="mailto:matheocaneva@gmail.com">matheocaneva@gmail.com</a>
+                </div>
+                <div class="footer_formulario parteDerecha">
+                    <!-- Formulario del lado derecho -->
+                    <h2 class="subrayado estilos_contacto">Formulario de Contacto</h2>
+                    <form action="#" method="get">
+                        <div class="parteIzquierda">
+                            <h5 class="estilos_contacto">Nombre</h5>
+                            <input type="text" name="nombre" required>
+                            <h5 class="estilos_contacto">Apellido</h5>
+                            <input type="text" name="apellido" required>
+                        </div>
+                        <div class="parteDerecha separacionForm">
+                            <h5 class=" estilos_contacto alineacionFormulario">Telefono</h5>
+                            <input type="tel" name="telefono" required>
+                            <h5 class=" estilos_contacto alineacionFormulario">Email</h5>
+                            <input type="email" name="email" required>
+                        </div>
+                        <h5 class="estilos_contacto alineacionFormulario">Comentarios</h5>
+                        <textarea name="comentario" id="" cols="30" rows="10" class="comentario"></textarea>
+                        <input class="btn_confirmar" type="submit" name="confirmar">
+                    </form>
+                </div>
+            </div>
+            <div class="div">
+                <!-- Logos para ir a mis perfiles -->
+                <ul class="div_logos">
+                    <li><a href="https://www.instagram.com/mathecaneva/?hl=es-la"><img src="./img/instagram.png"
+                                alt="logoIg"></a></li>
+                    <li><a href="https://www.linkedin.com/in/matheocaneva/"><img src="./img/linkedin.png"
+                                alt="logoLinkedin"></a></li>
+                    <li><a href="https://twitter.com/Mathe_Caneva"><img src="./img/twitter.png" alt="logoTw"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

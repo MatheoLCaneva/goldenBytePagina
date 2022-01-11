@@ -170,6 +170,9 @@
 
 .section_descriptivo p {
     font-size: 20px;
+    animation: backInLeft;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
 }
 
 .section_descriptivo_servicios {
@@ -314,7 +317,6 @@
 /* ESTILOS PARA LA PARTE DONDE ESTA EL FORMULARIO */
 .parteDerecha {
     display: inline-block;
-    margin-left: 10px;
 }
 
 
@@ -382,9 +384,6 @@
 
 .alineado {
     align-self: center;
-    animation-name: rotateInDownRight;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
 }
 /* ESTILO PARA SECCION NOSOTROS */
 

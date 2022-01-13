@@ -3,60 +3,28 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-.container{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas: "header" "main" "footer";
+.body_index{
+    background-image: url(../img/fotoCodigo.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
-.header {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "navHeader"
-        "navIndex";
-    grid-area: header;
+.body_servicios{
+    background-image: url(../img/cableadoEdit.jpeg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
-
-.navHeader {
-    display: flex;
-    /* width: 1900px; */
-    grid-area: navHeader;
-    justify-content: space-around;
+.body_descripcion {
+    background-image: url(../img/fotoCodigo.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
-
-.navIndex {
-    grid-area: navIndex;
-}
-
-.main {
-    grid-area: main;
-}
-
-.footer {
-    grid-area: footer;
-}
-
-
-
-
 /* HEADER */
-/* MENU HORIZONTAL DE CONTACTO RAPIDO */
-.navHeader {
-    background-color: rgb(62, 61, 61);
-    padding-bottom: 8px;
-    font-size: 20px;
-}
-
-.sectorIzquierdo {
-    margin-right: 292px;
-    width: 382px;
-    display: flex;
-    justify-content: space-evenly;
+header{
+    position: sticky;
+    top: 0%;
 }
 
 .link {
@@ -82,8 +50,7 @@
 /* NAVEGACION ENTRE SECCIONES Y NOMBRE DEL NEGOCIO */
 .navIndex {
     display: flex;
-    margin-top: 11px;
-    padding-bottom: 11px;
+    padding: 11px 0;
     background-color: white;
     text-transform: uppercase;
     grid-area: navIndex;
@@ -143,24 +110,16 @@
 }
 
 .section_descriptivo {
-    height: 300px;
     display: flex;
-    /* background-image: url(../img/fotoCodigo.jpg); */
     background-size: cover;
     text-align: center;
     color: rgb(255, 255, 255);
     font-weight: bold;
-    height: 272px;
+    height: 400px;
     flex-direction: column;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.section_descriptivo_index_background{
-    background-image: url(../img/fotoCodigo.jpg);
-
-}
-
 .section_descriptivo h1 {
     font-size: 40px;
     animation-name: backInRight;
@@ -176,9 +135,7 @@
 }
 
 .section_descriptivo_servicios {
-    background-image: url(../img/cableadoEdit.jpeg);
-    background-size: cover;
-    height: 300px;
+    height: 400px;
 }
 
 
@@ -216,6 +173,7 @@
 /*SERVICIOS, IMAGENES CIRCULARES Y DESCRIPCIONES  */
 .main_div_servicios {
     display: grid;
+    background-color: white;
     grid-template-rows: 62px 337px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "titulo titulo titulo""componentes pc codigo";
@@ -264,10 +222,9 @@
 .main_section_cierre {
     display: flex;
     background-image: url(../img/oficinaE.jpg);
-    background-position: center;
+    background-attachment: fixed;
     background-size: 1550px;
-    background-color: black;
-    height: 250px;
+    height: 333px;
     flex-direction: column;
     justify-content: center;
 }
@@ -337,6 +294,14 @@
 }
 
 /* LOGOS FINALES */
+
+.div_logos{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+
 .div_logos li {
     display: inline;
 }
@@ -388,11 +353,13 @@
 /* ESTILO PARA SECCION NOSOTROS */
 
 .alineado_presentacion {
-    margin-top: 35px;
+    padding-top: 35px;
     padding-left:142px;
     padding-right: 200px;
+    padding-bottom: 35px;
     font-family: 'Montserrat', sans-serif;
-    line-height: 30px
+    line-height: 30px;
+    background-color: white;
 }
 
 .descripcion_personal {
@@ -402,9 +369,10 @@
     grid-template-areas: "titulo titulo titulo""solProblemas postVenta resolucion" "respuestas seguimiento none";
     background-color: rgb(240, 239, 239);
     height: 351px;
-    margin-left: 142px;
-    margin-right: 190px;
-    margin-top: 60px;
+    padding-left: 142px;
+    padding-right: 190px;
+    padding-top: 60px;
+    border: 1px solid black;
     align-items: center;
 }
 
@@ -453,8 +421,7 @@
     }
 
     .navIndex {
-        margin-top: 7px;
-        padding-bottom: 6px;
+        padding: 7px 0;
     }
 
     .sectorIzquierdo {
@@ -618,7 +585,6 @@
 
     .footer_general {
         height: 479px;
-        flex-wrap: wrap;
         align-content: space-between;
     }
     .parteDerecha{

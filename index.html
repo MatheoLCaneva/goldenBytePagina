@@ -16,126 +16,124 @@
 </head>
 
 <body class="body_index">
-    <div>
-        <!-- Inicio del encabezado -->
-        <header class="container-fluid">
-            <!-- Navegacion entre secciones -->
-            <nav class="navIndex row justify-content-end">
-                <p class="col-6">Golden Byte</p>
-                <ul class="listaPadre col-4">
-                    <li class="lista"><a class="lista__link link_activo lista__link__efecto" href="index.html"> Inicio
-                        </a>
-                    </li>
-                    <li class="lista"><a class="lista__link lista__link__efecto lista__link__subitem"
-                            href="servicios.html">
-                            Servicios </a></li>
-                    <!-- <li class="lista"><a class="lista__link lista__link__efecto" href="noticias.html"> Noticias </a> -->
-                    </li>
-                    <li class="lista"><a class="lista__link lista__link__efecto" href="sobre_mi.html"> Nosotros </a>
-                    </li>
-                    <!-- <li class="lista"><a class="lista__link lista__link__efecto" href="contacto.html"> Contacto </a> -->
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <!-- Inicio del contenido principal -->
-        <main>
-            <!-- Inicio de imagen principal -->
-            <section class="section_descriptivo section_descriptivo_index_background">
-                <h1>Soporte Tecnico de Computadoras</h1>
+    <!-- Inicio del encabezado -->
+    <header>
+        <!-- Navegacion entre secciones -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> <img src="./img/logo.png" alt="goldenByte" class="logoGolden"> Golden
+                    Byte</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar_alineacion" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        <a class="nav-link" href="./servicios.html">Servicios</a>
+                        <a class="nav-link" href="./sobre_mi.html">Nosotros</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Inicio del contenido principal -->
+    <main>
+        <!-- Inicio de imagen principal -->
+        <section class="section_descriptivo section_descriptivo_index_background">
+            <h1>Soporte Tecnico de Computadoras</h1>
+            <br>
+            <p>Te ofrecemos el servicio ideal para tu computadora. Confiable, rapido y al mejor precio
+            </p>
+        </section>
+        <!-- Breve descripcion del negocio -->
+        <div class="divMainDescripcion">
+            <h4>Somos Golden Byte</h4>
+            <br>
+            <p>Somos un emprendimiento, con 1 año de experiencia en el mercado,
+                dedicado
+                a satisfacer las
+                necesidades de nuestros clientes. <br> Nuestro objetivo es brindar soluciones informaticas a los
+                clientes que lo requieran. Nos
+                caracterizamos por proveer un soluciones <br> economicas, confiables y de calidad. Nuestro
+                equipo
+                esta conformado por jovenes dispuestos a trabajar en conjunto para superar <br> cualquier
+                desafio, especializandonos en: Hardware, Software y Desarrollo Web.</p>
+        </div>
+        <!-- Imagenes con los servicios en forma circular -->
+        <div class="main_div_servicios">
+            <h2 class="main_titulo_servicios">Estos son nuestros Servicios</h2>
+            <div class="vistaIzquierda">
+                <img class="imgServicios" src="./img/partesPc.jpg" alt="pcPartes">
                 <br>
-                <p>Te ofrecemos el servicio ideal para tu computadora. Confiable, rapido y al mejor precio
-                </p>
-            </section>
-            <!-- Breve descripcion del negocio -->
-            <div class="divMainDescripcion">
-                <h4>Somos Golden Byte</h4>
+                <h5 class="descripcion pieFotoPartes">Cotización, armado <br> y venta de Pc</h5>
+            </div>
+            <div class="vistaCentro">
+                <img class="imgServicios" src="./img/pcBlanca.jpg" alt="pcBlanca">
                 <br>
-                <p>Somos un emprendimiento, con 1 año de experiencia en el mercado,
-                    dedicado
-                    a satisfacer las
-                    necesidades de nuestros clientes. <br> Nuestro objetivo es brindar soluciones informaticas a los
-                    clientes que lo requieran. Nos
-                    caracterizamos por proveer un soluciones <br> economicas, confiables y de calidad. Nuestro
-                    equipo
-                    esta conformado por jovenes dispuestos a trabajar en conjunto para superar <br> cualquier
-                    desafio, especializandonos en: Hardware, Software y Desarrollo Web.</p>
+                <h5 class="descripcion pieFotoPc">Mantenimiento de <br> Equipos informaticos</h5>
             </div>
-            <!-- Imagenes con los servicios en forma circular -->
-            <div class="main_div_servicios">
-                <h2 class="main_titulo_servicios">Estos son nuestros Servicios</h2>
-                <div class="vistaIzquierda">
-                    <img class="imgServicios" src="./img/partesPc.jpg" alt="pcPartes">
-                    <br>
-                    <h5 class="descripcion pieFotoPartes">Cotización, armado <br> y venta de Pc</h5>
-                </div>
-                <div class="vistaCentro">
-                    <img class="imgServicios" src="./img/pcBlanca.jpg" alt="pcBlanca">
-                    <br>
-                    <h5 class="descripcion pieFotoPc">Mantenimiento de <br> Equipos informaticos</h5>
-                </div>
-                <div class="vistaDerecha">
-                    <img class="imgServicios" src="./img/codigo.jpg" alt="codigo">
-                    <br>
-                    <h5 class="descripcion pieFotoCodigo">Desarrollo de Paginas<br>para todos los rubros</h5>
-                </div>
+            <div class="vistaDerecha">
+                <img class="imgServicios" src="./img/codigo.jpg" alt="codigo">
+                <br>
+                <h5 class="descripcion pieFotoCodigo">Desarrollo de Paginas<br>para todos los rubros</h5>
             </div>
-            <!-- Cierre de main con imagen -->
-            <section class="main_section_cierre">
-                <h3>Atencion Personalizada, Presupuestos sin cargo, Seguimiento del problema hasta resolverlo, <br>
-                    Garantia de calidad, Servicio Post Operacion</h3>
-            </section>
-        </main>
-        <!-- Inicio pie de pagina -->
-        <footer>
-            <!-- Aplico un fondo general -->
-            <div class="footer_general">
-                <!-- Parte izquierda con datos de contacto -->
-                <div class="footer_contacto parteIzquierda">
-                    <h2 class="estilos_contacto subrayado">Datos de Contacto</h2>
-                    <h4 class="estilos_contacto">Telefono</h5>
-                        <a class="link" href="tel:1131883213">11-3188-3213</a>
-                        <h4 class="estilos_contacto">Email</h5>
-                            <a class="link" href="mailto:matheocaneva@gmail.com">matheocaneva@gmail.com</a>
-                </div>
-                <div class="footer_formulario parteDerecha">
-                    <!-- Formulario del lado derecho -->
-                    <h2 class="subrayado estilos_contacto">Formulario de Contacto</h2>
-                    <form action="#" method="get">
-                        <div class="parteIzquierda">
-                            <h5 class="estilos_contacto">Nombre</h5>
-                            <input type="text" name="nombre" required>
-                            <h5 class="estilos_contacto">Apellido</h5>
-                            <input type="text" name="apellido" required>
-                        </div>
-                        <div class="parteDerecha separacionForm">
-                            <h5 class=" estilos_contacto alineacionFormulario">Telefono</h5>
-                            <input type="tel" name="telefono" required>
-                            <h5 class=" estilos_contacto alineacionFormulario">Email</h5>
-                            <input type="email" name="email" required>
-                        </div>
-                        <h5 class="estilos_contacto alineacionFormulario">Comentarios</h5>
-                        <textarea name="comentario" id="" cols="30" rows="10" class="comentario"></textarea>
-                        <input class="btn_confirmar" type="submit" name="confirmar">
-                    </form>
-                </div>
+        </div>
+        <!-- Cierre de main con imagen -->
+        <section class="main_section_cierre">
+            <h3>Atencion Personalizada, Presupuestos sin cargo, Seguimiento del problema hasta resolverlo, <br>
+                Garantia de calidad, Servicio Post Operacion</h3>
+        </section>
+    </main>
+    <!-- Inicio pie de pagina -->
+    <footer>
+        <!-- Aplico un fondo general -->
+        <div class="footer_general">
+            <!-- Parte izquierda con datos de contacto -->
+            <div class="footer_contacto parteIzquierda">
+                <h2 class="estilos_contacto subrayado">Datos de Contacto</h2>
+                <h4 class="estilos_contacto">Telefono</h5>
+                    <a class="link" href="tel:1131883213">11-3188-3213</a>
+                    <h4 class="estilos_contacto">Email</h5>
+                        <a class="link" href="mailto:matheocaneva@gmail.com">matheocaneva@gmail.com</a>
             </div>
-            <div class="div">
-                <!-- Logos para ir a mis perfiles -->
-                <ul class="div_logos">
-                    <li><a href="https://www.instagram.com/mathecaneva/?hl=es-la"><img src="./img/instagram.png"
-                                alt="logoIg"></a></li>
-                    <li><a href="https://www.linkedin.com/in/matheocaneva/"><img src="./img/linkedin.png"
-                                alt="logoLinkedin"></a></li>
-                    <li><a href="https://twitter.com/Mathe_Caneva"><img src="./img/twitter.png" alt="logoTw"></a></li>
-                </ul>
+            <div class="footer_formulario parteDerecha">
+                <!-- Formulario del lado derecho -->
+                <h2 class="subrayado estilos_contacto">Formulario de Contacto</h2>
+                <form action="#" method="get">
+                    <div class="parteIzquierda">
+                        <h5 class="estilos_contacto">Nombre</h5>
+                        <input type="text" name="nombre" required>
+                        <h5 class="estilos_contacto">Apellido</h5>
+                        <input type="text" name="apellido" required>
+                    </div>
+                    <div class="parteDerecha separacionForm">
+                        <h5 class=" estilos_contacto alineacionFormulario">Telefono</h5>
+                        <input type="tel" name="telefono" required>
+                        <h5 class=" estilos_contacto alineacionFormulario">Email</h5>
+                        <input type="email" name="email" required>
+                    </div>
+                    <h5 class="estilos_contacto alineacionFormulario">Comentarios</h5>
+                    <textarea name="comentario" id="" cols="30" rows="10" class="comentario"></textarea>
+                    <input class="btn_confirmar" type="submit" name="confirmar">
+                </form>
             </div>
-        </footer>
-    </div>
-
+        </div>
+        <div class="div">
+            <!-- Logos para ir a mis perfiles -->
+            <ul class="div_logos">
+                <li><a href="https://www.instagram.com/mathecaneva/?hl=es-la"><img src="./img/instagram.png"
+                            alt="logoIg"></a></li>
+                <li><a href="https://www.linkedin.com/in/matheocaneva/"><img src="./img/linkedin.png"
+                            alt="logoLinkedin"></a></li>
+                <li><a href="https://twitter.com/Mathe_Caneva"><img src="./img/twitter.png" alt="logoTw"></a></li>
+            </ul>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
-</body> 
+</body>
 
 </html>

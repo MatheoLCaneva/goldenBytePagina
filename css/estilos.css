@@ -27,71 +27,19 @@ header{
     position: sticky;
     top: 0%;
 }
-
-.link {
-    text-decoration: none;
-    color: black;
+.navbar{
+    margin: 0;
+    padding: 0;
+}
+.navbar_alineacion{
+    justify-content: end;
+    padding-right: 14rem;
 }
 
-.link_mail {
-    display: inline;
-    color: white;
+.logoGolden{
+    height: 6rem;
+    width: 6rem;
 }
-
-.link_direccion {
-    display: inline;
-    color: rgb(255, 255, 255);
-}
-
-.telefono {
-    display: inline-block;
-    color: white;
-}
-
-/* NAVEGACION ENTRE SECCIONES Y NOMBRE DEL NEGOCIO */
-.navIndex {
-    padding-top: 11px;
-    background-color: white;
-    text-transform: uppercase;
-}
-
-.navIndex p {
-    font-size: 20px;
-    display: inline-block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-}
-
-.listaPadre {
-    display: inline;
-}
-
-.lista {
-    list-style: none;
-    color: black;
-    display: inline;
-    word-spacing: 25px;
-}
-
-.link_activo {
-    font-weight: bold;
-}
-
-.lista__link {
-    text-decoration: none;
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-}
-
-.lista__link__efecto:hover {
-    color: grey;
-    text-decoration: transparent;
-    animation: flash;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-
 /* MAIN */
 /* IMAGEN DE PORTADA CON TITULO */
 .divMainImagen {

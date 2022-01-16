@@ -4,41 +4,52 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-.body_index{
+
+p {
+    margin: 0%;
+}
+
+.body_index {
     background-image: url(../img/fotoCodigo.jpg);
     background-size: cover;
     background-repeat: repeat;
     background-attachment: fixed;
 }
-.body_servicios{
+
+.body_servicios {
     background-image: url(../img/cableadoEdit.jpeg);
     background-size: cover;
     background-repeat: repeat;
     background-attachment: fixed;
 }
+
 .body_descripcion {
     background-image: url(../img/fotoCodigo.jpg);
     background-size: cover;
     background-repeat: repeat;
     background-attachment: fixed;
 }
+
 /* HEADER */
-header{
+header {
     position: sticky;
     top: 0%;
 }
-.navbar{
+
+.navbar {
     margin: 0;
     padding: 0;
 }
-.navbar_alineacion{
+
+.navbar_alineacion {
     justify-content: end;
     padding-right: 14rem;
 }
 
-.logoGolden{
+.logoGolden {
     width: 10rem;
 }
+
 /* MAIN */
 /* IMAGEN DE PORTADA CON TITULO */
 .divMainImagen {
@@ -62,6 +73,7 @@ header{
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .section_descriptivo h1 {
     font-size: 40px;
     animation-name: backInRight;
@@ -116,29 +128,33 @@ header{
 .main_div_servicios {
     display: grid;
     background-color: white;
-    grid-template-rows: 62px 337px;
+    grid-template-rows: 62px 264px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "titulo titulo titulo""componentes pc codigo";
     justify-items: center;
     padding-top: 41px;
 }
 
+.main_servicios_pos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* ESTILO IMAGEN IZQUIERDA Y ESTILOS EN COMUN*/
 .vistaIzquierda {
     grid-area: componentes;
-    display: inline-block;
 }
 
 .imgServicios {
-    display: inline-block;
-    height: 239px;
-    width: 239px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     border: solid 3px rgb(121, 119, 119);
+    flex: none;
 }
 
 .descripcion {
-    font-size: 25px;
     display: inline-block;
     color: rgb(88, 85, 85);
     text-align: center;
@@ -148,14 +164,12 @@ header{
 /* ESTILO IMAGEN DEL CENTRO */
 .vistaCentro {
     grid-area: pc;
-    display: inline-block;
 }
 
 
 /* ESTILO IMAGEN DERECHA */
 .vistaDerecha {
     grid-area: codigo;
-    display: inline-block;
 
 }
 
@@ -237,11 +251,11 @@ header{
 
 /* LOGOS FINALES */
 
-.div_logos{
+.div_logos {
     background-color: white;
     display: flex;
     justify-content: space-around;
-    padding-bottom: 3px;
+    padding: 3rem 0;
     margin-bottom: 0%;
 }
 
@@ -254,51 +268,43 @@ header{
 
 .listado_servicios {
     display: grid;
-    grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
-        "foto_partes descripcion_partes"
-        "foto_pcNegra descripcion_pcNegra"
-        "foto_codigo descripcion_codigo";
-    height: 1181px;
+        "primero"
+        "segundo"
+        "tercero";
     background-color: rgb(240, 239, 239);
-    padding-top: 65px;
-    padding-left: 65px;
+    padding: 65px 0 65px 65px;
     align-items: center;
 }
 
-.servicio_fotoPartes {
-    grid-area: foto_partes;
+.primer_servicio {
+    grid-area: primero;
+    display: flex;
+    margin-bottom: 69px;
 }
 
-.servicio_fotoPcNegra {
-    grid-area: foto_pcNegra;
+.segundo_servicio {
+    grid-area: segundo;
+    display: flex;
+    margin-bottom: 45px;
 }
 
-.servicio_fotoCodigo {
-    grid-area: foto_codigo;
-}
-
-.servicio_partes {
-    grid-area: descripcion_partes;
-}
-
-.servicio_pcNegra {
-    grid-area: descripcion_pcNegra;
-}
-
-.servicio_Codigo {
-    grid-area: descripcion_codigo;
+.tercer_servicio {
+    grid-area: tercero;
+    display: flex;
 }
 
 .alineado {
     align-self: center;
+    font-size: smaller;
 }
+
 /* ESTILO PARA SECCION NOSOTROS */
 
 .alineado_presentacion {
     padding-top: 35px;
-    padding-left:142px;
+    padding-left: 142px;
     padding-right: 200px;
     padding-bottom: 35px;
     font-family: 'Montserrat', sans-serif;
@@ -307,17 +313,15 @@ header{
 }
 
 .descripcion_personal {
+    background-color: rgb(240, 239, 239);
+    padding: 60px 190px 57px 142px;
+}
+
+.contenedor_descripcion {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: .4fr 1fr 1fr;
-    grid-template-areas: "titulo titulo titulo""solProblemas postVenta resolucion" "respuestas seguimiento none";
-    background-color: rgb(240, 239, 239);
-    height: 351px;
-    padding-left: 142px;
-    padding-right: 190px;
-    padding-top: 60px;
-    border: 1px solid black;
-    align-items: center;
+    grid-template-areas: "titulo titulo titulo""solProblemas postVenta resolucion""respuestas seguimiento none";
 }
 
 .titulo_descripcion_personal {
@@ -360,18 +364,6 @@ header{
 
 
 @media (max-width:768px) {
-    .navHeader {
-        justify-content: space-evenly;
-    }
-
-    .navIndex {
-        padding: 7px 0;
-    }
-
-    .sectorIzquierdo {
-        margin-right: 0;
-    }
-
     .section_descriptivo h1 {
         font-size: 35px;
     }
@@ -393,49 +385,87 @@ header{
         font-size: 20px;
     }
 
-    .main_div_servicios{
+    .main_div_servicios {
         grid-template-columns: 1fr;
-        grid-template-rows: 62px 337px 1fr 1fr;
-        grid-template-areas: "titulo" "componentes" "pc" "codigo";
+        grid-template-rows: .3fr 1fr 1fr 1fr;
+        grid-template-areas: "titulo""componentes""pc""codigo";
         justify-items: center;
     }
 
     .listado_servicios {
-        grid-template-rows: 1fr 2fr 1fr 1.5fr 1fr 1.5fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: "foto_partes""descripcion_partes""foto_pcNegra""descripcion_pcNegra""foto_codigo""descripcion_codigo";
-        height: 1298px;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "primero""segundo""tercero";
         justify-items: center;
     }
 
-    .footer_general{
+    .primer_servicio {
         flex-direction: column;
         align-items: center;
     }
 
-    .parteDerecha{
-        margin-top: 40px;
+    .segundo_servicio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tercer_servicio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_general {
+        flex-direction: column;
+        align-items: center;
     }
 
     .alineado {
+        font-size: 10px;
+    }
+
+    .imgServicios {
+        margin-bottom: 10px;
+    }
+
+    .subrayado {
         font-size: 20px;
     }
 
-    .alineado_presentacion{
-        font-size: 17px;
-        padding-left:86px;
-        padding-right: 44px;
-        margin-right: 0;
-
+    .alineacionFormulario {
+        font-size: 16px;
     }
 
-    .descripcion_personal{
-        margin-left: 37px;
-        margin-right: 42px;
-        width: auto;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: .4fr 1fr 1fr 1fr;
-        grid-template-areas: "titulo titulo" "solProblemas postVenta" "resolucion respuestas" "seguimiento none";
+    .alineacionContacto {
+        font-size: 16px;
+    }
+
+    input {
+        font-size: small;
+    }
+
+    .footer_formulario {
+        margin-top: 40px;
+    }
+
+    .alineado_presentacion {
+        font-size: 17px;
+        padding-left: 86px;
+        padding-right: 44px;
+        margin-right: 0;
+    }
+
+    .descripcion_personal {
+        padding: 60px 6px 60px 6px;
+        font-size: 13px;
+    }
+
+    .far,
+    .fas {
+        font-size: 17px;
+    }
+
+    .main_section_cierre h3 {
+        font-size: 16px;
+        padding: 0 79px;
     }
 }
 
@@ -444,49 +474,35 @@ header{
         display: grid;
     }
 
-    .navIndex {
-        flex-wrap: wrap;
-    }
-
-    .navIndex p {
-        margin-bottom: 10px;
-        text-decoration: underline;
-    }
-
-    .listaPadre {
-        text-align: center;
-    }
-
-    .navHeader {
-        width: 375px;
-        flex-wrap: wrap;
+    .main_titulo_servicios {
+        font-size: 19px;
     }
 
     .section_descriptivo h1 {
         font-size: 30px;
     }
 
-    .section_descriptivo p {
-        width: 375px;
+    .divMainDescripcion p {
+        font-size: smaller;
     }
 
     .descripcion_negocio {
         width: 329px;
-        left: 23px;
     }
 
     .listado_servicios {
-        height: 1470px;
         justify-items: center;
         padding-left: 0;
     }
 
-    .alineado {
-        width: 278px;
-        font-size: 16px;
-        margin-bottom: 49px;
-        margin-top: 15px;
+    .primer_servicio,
+    .segundo_servicio {
+        margin-bottom: 0%;
+    }
 
+    .alineado {
+        font-size: 12px;
+        padding: 0 35px;
     }
 
     .main_div_servicios {
@@ -504,6 +520,7 @@ header{
 
     .main_section_cierre h3 {
         font-size: 15px;
+        padding: 0%;
     }
 
     .navHeader {
@@ -514,24 +531,51 @@ header{
         margin-right: 0;
     }
 
-    .descripcion_personal{
-        margin-left: 25px;
-        width: 314px;
-        height: 579px;
+    .estilos_contacto {
+        font-size: 14px;
+    }
+
+    input {
+        font-size: 10px;
+    }
+
+    .comentario {
+        width: fit-content;
+    }
+
+    .btn_confirmar {
+        margin-left: 85px;
+    }
+
+    .alineado_presentacion {
+        font-size: 12px;
+        padding-left: 20px;
+        padding-right: 0%;
+    }
+
+    .descripcion_personal {
         grid-template-columns: 1fr;
         grid-template-rows: .7fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "titulo" "solProblemas" "postVenta" "resolucion" "respuestas" "seguimiento";
-        background-color: rgb(240,239,239);
-        margin-top: 52px;
-        margin-bottom: 10px;
-        align-items: center;
+        grid-template-areas: "titulo""solProblemas""postVenta""resolucion""respuestas""seguimiento";
+        background-color: rgb(240, 239, 239);
+        font-size: x-small;
+        padding: 30px 0;
+    }
+
+    .titulo_descripcion_personal {
+        font-size: 22px;
     }
 
     .footer_general {
-        height: 479px;
         align-content: space-between;
     }
-    .parteDerecha{
-        margin-top: 18px;
+
+    .footer_formulario {
+        margin-top: 51px;
+    }
+
+    .far,
+    .fas {
+        font-size: 12px;
     }
 }

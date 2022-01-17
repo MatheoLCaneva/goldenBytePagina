@@ -109,7 +109,6 @@ header {
     font-weight: normal;
     font-size: 25px;
     color: rgb(88, 85, 85);
-    text-decoration: underline;
     line-height: 0;
 }
 
@@ -121,7 +120,6 @@ header {
     font-family: 'Montserrat', sans-serif;
     display: inline-block;
     border-width: 2px;
-    text-decoration: underline;
 }
 
 /*SERVICIOS, IMAGENES CIRCULARES Y DESCRIPCIONES  */
@@ -221,10 +219,6 @@ header {
 .estilos_contacto {
     font-weight: normal;
     line-height: 30px;
-}
-
-.subrayado {
-    border-bottom: solid 2px rgb(88, 85, 85);
 }
 
 /* ESTILOS PARA LA PARTE DONDE ESTA EL FORMULARIO */

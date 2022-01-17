@@ -34,6 +34,7 @@ p {
 header {
     position: sticky;
     top: 0%;
+    z-index: 2;
 }
 
 .navbar {
@@ -229,7 +230,6 @@ header {
 
 
 .comentario {
-    display: block;
     height: 44px;
     width: 348px;
     resize: none;
@@ -237,10 +237,11 @@ header {
 
 .btn_confirmar {
     display: block;
-    margin-left: 115px;
+    margin-left: 146px;
     padding-left: 37px;
     padding-right: 37px;
     margin-top: 10px;
+    appearance: inherit;
 }
 
 /* LOGOS FINALES */
@@ -356,6 +357,25 @@ header {
     font-weight: normal;
 }
 
+/* ESTILOS PARA LA SECCION GALERIA */
+
+.cuadrado{
+    height: 100px;
+    width: 100px;
+    background-color: lawngreen;
+}
+
+.img_galeria{
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+}
+.img_galeria:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
 
 @media (max-width:768px) {
     .section_descriptivo h1 {
@@ -426,6 +446,10 @@ header {
 
     .alineacionFormulario {
         font-size: 16px;
+    }
+
+    .btn_confirmar{
+        margin-left: 116px;
     }
 
     .alineacionContacto {

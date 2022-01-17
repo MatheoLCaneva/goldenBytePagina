@@ -145,8 +145,8 @@ header {
 }
 
 .imgServicios {
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     border: solid 3px rgb(121, 119, 119);
     flex: none;
@@ -291,7 +291,7 @@ header {
 
 .alineado {
     align-self: center;
-    font-size: smaller;
+    font-size: unset;
 }
 
 /* ESTILO PARA SECCION NOSOTROS */
@@ -390,16 +390,19 @@ header {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: "primero""segundo""tercero";
         justify-items: center;
+        padding-left: 0%;
     }
 
     .primer_servicio {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 0%;
     }
 
     .segundo_servicio {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 0%;
     }
 
     .tercer_servicio {
@@ -411,9 +414,13 @@ header {
         flex-direction: column;
         align-items: center;
     }
+    .imgServicios{
+        height: 150px;
+        width: 150px;
+    }
 
     .alineado {
-        font-size: 10px;
+        font-size: 13px;
     }
 
     .imgServicios {

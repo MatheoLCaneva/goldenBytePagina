@@ -47,6 +47,19 @@ header {
     padding-right: 14rem;
 }
 
+.efecto_subrayado{
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    padding: 0%;
+}
+
+.efecto_subrayado:hover, .efecto_subrayado:focus{
+    background-size: 100% 2px;
+}
+
 .logoGolden {
     width: 10rem;
 }

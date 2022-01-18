@@ -18,7 +18,7 @@
 
 
 <body>
-    <header class="container-fluid">
+    <header class="container-fluid p-0">
         <!-- Navegacion entre secciones -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -33,9 +33,9 @@
                     <div class="navbar-nav">
                         <a class="nav-link efecto_subrayado" aria-current="page" href="./index.html">Inicio</a>
                         <a class="nav-link efecto_subrayado" href="./servicios.html">Servicios</a>
-                        <a class="nav-link efecto_subrayado" href="./galeria.html">Galería</a>
+                        <a class="nav-link active efecto_subrayado" href="./galeria.html">Galería</a>
                         <a class="nav-link efecto_subrayado" href="./sobre_mi.html">Nosotros</a>
-                        <a class="nav-link active efecto_subrayado proximamente" href="./noticias.html">Noticias</a>
+                        <a class="nav-link efecto_subrayado proximamente" href="./noticias.html">Noticias</a>
                     </div>
                 </div>
             </div>
@@ -54,7 +54,8 @@
                 <div class="row border rounded overflow-hidden">
                     <div class="col p-4 flex-column">
                         <h4>Vuelve conectar igualdad</h4>
-                        <p class="card-text">El programa que entrega notebooks a sus estudiantes y maestros esta de vuelta</p>
+                        <p class="card-text">El programa que entrega notebooks a sus estudiantes y maestros esta de
+                            vuelta</p>
                         <br>
                         <a class="navbar-link" href="#">Seguir leyendo</a>
                     </div>
@@ -79,9 +80,37 @@
         </div>
         <div class="row">
             <h2 class="my-5 pb-4 border-bottom">Principales noticias del día</h2>
-            <h4>LG sorprende con el primer televisor OLED de 97 pulgadas del mundo</h4>
-            <p class="fechas">17 de Enero por <a href="https://www.linkedin.com/in/matheocaneva/">Matheo</a></p>
-            <p>Fue presentado en el CES de Las Vegas</p>
+            <div class="col-xl-8">
+                <h4> <a class="nav-link d-inline ps-0 efecto_subrayado noticias_titulo"
+                        href="https://www.abc.es/tecnologia/electronica/imagen/abci-sorprende-primer-televisor-oled-97-pulgadas-mundo-202201041225_noticia.html"
+                        target="_blank">
+                        LG sorprende con el primer televisor OLED de 97 pulgadas <br> del mundo</h4></a>
+                <p class="fechas">17 de Enero por <a href="https://www.linkedin.com/in/matheocaneva/">Matheo</a></p>
+                <p class="noticias_descripciones">Fue presentado en el CES de Las Vegas. LG anunció que ampliará su
+                    oferta de dispositivos Mini LED,
+                    con
+                    Quantum Dot NanoCell, que según la firma coreana, consigue negros más precisos y colores más
+                    vibrantes.
+                    Eso sí, no todos los modelos del 2022 QNED usarán Mini LED, algo a tener en cuenta.</p>
+            </div>
+            <div class="col-xl-4">
+                <img src="./img/led.jpg" alt="led_lg_98_pulgadas" class="img_noticias">
+            </div>
+        </div>
+        <div class="row border-top mt-5 py-4">
+            <div class="col-xl-8">
+                <h4> <a class="nav-link d-inline ps-0 efecto_subrayado noticias_titulo"
+                        href="https://www.xataka.com/basics/estafas-sms-guia-para-evitar-virus-robos-informacion-que-hacer-te-pasa"
+                        target="_blank">
+                        Estafas virtuales: Te contamos que hacer cuando recibes un intento de estafa por SMS y como
+                        evitarlo</h4></a>
+                <p class="fechas">18 de Enero por <a href="https://www.linkedin.com/in/matheocaneva/">Matheo</a></p>
+                <p class="noticias_descripciones">Te traemos una guía para saber qué hacer cuando recibes un intento de estafa por SMS, con toda la
+                    información que vas a necesitar para enfrentarte a ellos.</p>
+            </div>
+            <div class="col-xl-4">
+                <img src="./img/phishing.jpg" alt="phishing" class="img_noticias">
+            </div>
         </div>
     </main>
     <footer>
@@ -91,16 +120,14 @@
                 <li class="nav-item"><a href="./servicios.html" class="nav-link px-2 text-muted">Servicios</a></li>
                 <li class="nav-item"><a href="./galeria.html" class="nav-link px-2 text-muted">Galería</a></li>
                 <li class="nav-item"><a href="./sobre_mi.html" class="nav-link px-2 text-muted">Nosotros</a></li>
+                <li class="nav-item"><a href="./noticias.html" class="nav-link px-2 text-muted">Noticias</a></li>
             </ul>
             <p class="text-center text-muted">© 2021 Company, Inc</p>
         </div>
     </footer>
-
-
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 <app-content ng-version="11.1.0"></app-content>
 

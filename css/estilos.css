@@ -61,6 +61,15 @@ header {
     background-size: 100% 2px;
 }
 
+a.animado {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
 .logoGolden {
     width: 10rem;
 }
@@ -395,16 +404,21 @@ header {
 
 /* SECCION NOTICIAS */
 
-.periodicos{
+.periodicos {
     background-image: url(../img/periodicos2.jpg);
     background-repeat: round;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.fechas{
+.fechas {
     color: #727272;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+}
+
+.img_noticias {
+    width: auto;
+    height: 200px;
 }
 
 @media (max-width:768px) {
@@ -527,6 +541,16 @@ header {
     .img_galeria {
         width: 200px;
         height: 200px;
+    }
+
+    .noticias_titulo{
+        font-size: medium;
+    }
+    .noticias_descripciones{
+        font-size: small;
+    }
+    .fechas{
+        font-size: medium;
     }
 }
 

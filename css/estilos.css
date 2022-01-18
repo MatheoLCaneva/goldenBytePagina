@@ -52,7 +52,7 @@ header {
 }
 
 .proximamente::before{
-    content: "Galería";
+    content: "Contacto";
 }
 .proximamente:hover::before{
     content: "Proximamente";

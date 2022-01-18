@@ -376,6 +376,7 @@ header {
     height: 300px;
     width: 300px;
     overflow: hidden;
+    border-radius: 10%;
 }
 .img_galeria:hover{
     transform: scale(1.1);
@@ -498,6 +499,11 @@ header {
     .main_section_cierre h3 {
         font-size: 16px;
         padding: 0 79px;
+    }
+
+    .img_galeria{
+        width: 200px;
+        height: 200px;
     }
 }
 

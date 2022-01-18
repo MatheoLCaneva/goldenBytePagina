@@ -13,8 +13,9 @@
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="icon" type="image/x-icon" href="img/logo.ico">
-    <title>Bienvenido</title>
+    <title>Noticias</title>
 </head>
+
 
 <body>
     <header class="container-fluid">
@@ -34,57 +35,28 @@
                         <a class="nav-link efecto_subrayado" href="./servicios.html">Servicios</a>
                         <a class="nav-link efecto_subrayado" href="./galeria.html">Galería</a>
                         <a class="nav-link efecto_subrayado" href="./sobre_mi.html">Nosotros</a>
-                        <a class="nav-link active efecto_subrayado" href="./contacto.html">Contacto</a>
+                        <a class="nav-link active efecto_subrayado proximamente" href="./noticias.html">Noticias</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
-        <hr>
-        <section class="sectionMain">
-            <article class="article">
-                <div class="article__text">
-                    <h1>Soporte Tecnico de Computadoras</h1>
-                    <br>
-                    <p>Te ofrecemos el servicio ideal para tu computadora. Confiable, rapido y al mejor precio</p>
-                </div>
-            </article>
-        </section>
-        <h1> <u> Formulario de Contacto</u></h1>
-        <form action="#" method="GET">
-            <!--  -->
-            <input type="text" placeholder="Ingresa tu nombre" name="nombre" required>
-            <input type="text" placeholder="Ingresa tu apellido" name="apellido" required>
-            <input type="number" name="Edad " required>
-            <input type="tel" placeholder="telefono" name="telefono" required>
-            <input type="email" placeholder="mail" name="mail" required>
-            <!-- Opciones tipo radio -->
-            <div>
-                <h3>Sexo</h3>
-                <select name="Sexo" name="sexo" required>
-                    <option value="1"> Masculino </option>
-                    <option value="2"> Femenino </option>
-                    <option value="3"> No Binario </option>
-                    <option value="4"> Otro </option>
-                </select>
+    <main class="container">
+        <div class="bg-dark rounded text-white p-5 mt-5">
+            <div class="col-md-6">
+                <h3>Principales noticias del mundo de la informática</h3>
+                <p>Te acercamos las recientes novedades a nivel nacional e internacional para que estes siempre
+                    actualizado</p>
             </div>
-            <div>
-                <p>Acepta terminos y condiciones? </p>
-                <input type="checkbox" name="Acepta" value="SI" required>
-            </div>
-            <input type="submit" value="Contactar">
-
-        </form>
-    </main>
-    <footer>
-        <div>
-            <a href=""> Twitter </a>
-            <a href=""> Facebook </a>
-            <a href=""> Linkedin </a>
-            <a href=""> Youtube </a>
         </div>
-    </footer>
+    </main>
+
+
+
+
+
+
 </body>
+<app-content ng-version="11.1.0"></app-content>
 
 </html>

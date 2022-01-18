@@ -393,7 +393,19 @@ header {
     transition: 1s;
 }
 
+/* SECCION NOTICIAS */
 
+.periodicos{
+    background-image: url(../img/periodicos2.jpg);
+    background-repeat: round;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fechas{
+    color: #727272;
+    margin-bottom: 3rem;
+}
 
 @media (max-width:768px) {
     .section_descriptivo h1 {

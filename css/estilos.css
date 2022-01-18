@@ -51,6 +51,13 @@ header {
     width: 10rem;
 }
 
+.proximamente::before{
+    content: "Galería";
+}
+.proximamente:hover::before{
+    content: "Proximamente";
+}
+
 /* MAIN */
 /* IMAGEN DE PORTADA CON TITULO */
 .divMainImagen {

@@ -1,0 +1,11 @@
+.img_galeria {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10%;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 1s;
+    }
+}

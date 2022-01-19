@@ -1,0 +1,43 @@
+.body_servicios {
+    background-image: url(../img/cableadoEdit.jpeg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+
+.listado_servicios {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "primero"
+        "segundo"
+        "tercero";
+    background-color: rgb(240, 239, 239);
+    padding: 65px 0 65px 65px;
+    align-items: center;
+
+    .primer_servicio {
+        grid-area: primero;
+        display: flex;
+        margin-bottom: 69px;
+    }
+
+    .segundo_servicio {
+        grid-area: segundo;
+        display: flex;
+        margin-bottom: 45px;
+    }
+
+    .tercer_servicio {
+        grid-area: tercero;
+        display: flex;
+    }
+}
+
+
+
+
+
+
+

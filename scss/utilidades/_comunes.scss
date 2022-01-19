@@ -1,0 +1,22 @@
+p {
+    margin: 0%;
+}
+.descripcion {
+    display: inline-block;
+    color: rgb(88, 85, 85);
+    text-align: center;
+    font-weight: normal;
+}
+
+.imgServicios {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: solid 3px rgb(121, 119, 119);
+    flex: none;
+}
+
+.alineado {
+    align-self: center;
+    font-size: unset;
+}

@@ -1,0 +1,37 @@
+header {
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+
+    .navbar {
+        margin: 0;
+        padding: 0;
+
+        .container-fluid {
+            .logoGolden {
+                width: 10rem;
+            }
+        }
+    }
+}
+
+.navbar_alineacion {
+    justify-content: end;
+    padding-right: 14rem;
+
+    .navbar-nav {
+        .efecto_subrayado {
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
+
+            &:hover, &:focus{
+                background-size: 100% 2px;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,127 @@
+@media (max-width:768px) {
+    .section_descriptivo h1 {
+        font-size: 35px;
+    }
+
+    .section_descriptivo p {
+        font-size: 15px;
+    }
+
+    .divMainDescripcion h4 {
+        width: 248px;
+        font-size: 20px;
+    }
+
+    .main_div_servicios {
+        grid-template-columns: 1fr;
+        grid-template-rows: .3fr 1fr 1fr 1fr;
+        grid-template-areas: "titulo""componentes""pc""codigo";
+        justify-items: center;
+    }
+
+    .listado_servicios {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "primero""segundo""tercero";
+        justify-items: center;
+        padding-left: 0%;
+
+        .primer_servicio {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 0%;
+        }
+
+        .segundo_servicio {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 0%;
+        }
+
+        .tercer_servicio {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .alineado {
+            font-size: 13px;
+        }
+    }
+
+    .imgServicios {
+        height: 150px;
+        width: 150px;
+        margin-bottom: 10px;
+    }
+
+    .main_section_cierre h3 {
+        font-size: 16px;
+        padding: 0 79px;
+    }
+
+
+    .footer_general {
+        flex-direction: column;
+        align-items: center;
+
+        .subrayado {
+            font-size: 20px;
+        }
+
+        .alineacionContacto {
+            font-size: 16px;
+        }
+
+        input {
+            font-size: small;
+        }
+
+        .footer_formulario {
+            margin-top: 40px;
+
+            .alineacionFormulario {
+                font-size: 16px;
+            }
+
+            .btn_confirmar {
+                margin-left: 116px;
+            }
+        }
+    }
+
+    .img_galeria {
+        width: 200px;
+        height: 200px;
+    }
+
+    .descripcion_presentacion {
+        .alineado_presentacion {
+            font-size: 17px;
+            padding-left: 86px;
+            padding-right: 44px;
+            margin-right: 0;
+        }
+    }
+
+
+    .descripcion_personal {
+        padding: 60px 6px 60px 6px;
+        font-size: 13px;
+
+        .far,
+        .fas {
+            font-size: 17px;
+        }
+    }
+
+    .noticias_titulo {
+        font-size: medium;
+    }
+
+    .noticias_descripciones {
+        font-size: small;
+    }
+
+    .fechas {
+        font-size: medium;
+    }
+}

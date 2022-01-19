@@ -1,0 +1,68 @@
+.body_descripcion {
+    background-image: url(../img/fotoCodigo.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.descripcion_presentacion {
+    background-color: white;
+
+    .alineado_presentacion {
+        padding: 35px 0 35px 142px;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 30px;
+        background-color: white;
+    }
+}
+
+.descripcion_personal {
+    background-color: rgb(240, 239, 239);
+    padding: 60px 190px 57px 142px;
+
+    .contenedor_descripcion {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: .4fr 1fr 1fr;
+        grid-template-areas: "titulo titulo titulo""solProblemas postVenta resolucion""respuestas seguimiento none";
+
+        .titulo_descripcion_personal {
+            grid-area: titulo;
+            justify-self: center;
+        }
+
+        .descripcion_solucion_problemas {
+            grid-area: solProblemas;
+        }
+
+        .descripcion_post_venta {
+            grid-area: postVenta;
+        }
+
+        .descripcion_resolucion {
+            grid-area: resolucion;
+        }
+
+        .descripcion_respuestas {
+            grid-area: respuestas;
+        }
+
+        .descripcion_seguimiento {
+            grid-area: seguimiento;
+        }
+    }
+
+    .alineacion_descripcion_personal {
+        text-align: center;
+    }
+
+    .far,
+    .fas {
+        font-size: 20px;
+    }
+
+    .texto_normal {
+        font-weight: normal;
+    }
+
+}

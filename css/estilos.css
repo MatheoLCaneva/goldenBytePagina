@@ -407,13 +407,20 @@ p {
     .descripcion_personal .far,
     .descripcion_personal .fas {
       font-size: 12px; }
+  .section_descriptivo_noticias h3 {
+    font-size: 25px; }
+  .section_descriptivo_noticias p {
+    font-size: 15px; }
+  .img_noticias {
+    width: 75%;
+    height: auto; }
   .footer_general {
     align-content: space-between; }
     .footer_general .footer_formulario {
       margin-top: 51px; }
       .footer_general .footer_formulario input {
         font-size: 10px; }
-    .footer_general .comentario {
-      width: fit-content; }
+    .footer_general .parteDerecha .comentario {
+      width: 100%; }
     .footer_general .btn_confirmar {
       margin-left: 85px; } }

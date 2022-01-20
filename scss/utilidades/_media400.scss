@@ -68,6 +68,21 @@
         }
     }
 
+    .section_descriptivo_noticias {
+        h3 {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    .img_noticias {
+        width: 75%;
+        height: auto;
+    }
+
     .footer_general {
         align-content: space-between;
 
@@ -79,9 +94,14 @@
             }
         }
 
-        .comentario {
-            width: fit-content;
+        .parteDerecha {
+
+            .comentario {
+                width: 100%;
+            }
         }
+
+
 
         .btn_confirmar {
             margin-left: 85px;

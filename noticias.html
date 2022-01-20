@@ -11,18 +11,19 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="icon" type="image/x-icon" href="img/logo.ico">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
     <link rel="stylesheet" href="./css/estilos.css">
     <title>Noticias</title>
 </head>
 
 
-<body>
-    <header class="container-fluid p-0">
+<body class="body_noticias">
+    <header>
         <!-- Navegacion entre secciones -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 py-sm-0">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"> <img src="./img/logo.png" alt="goldenByte" class="logoGolden"> Golden
+                <a class="navbar-brand" href="#"> <img src="./img/logo.png" alt="goldenByte"
+                        class="logoGolden d-none d-sm-inline-block"> Golden
                     Byte</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -34,82 +35,85 @@
                         <a class="nav-link efecto_subrayado" aria-current="page" href="./index.html">Inicio</a>
                         <a class="nav-link efecto_subrayado" href="./servicios.html">Servicios</a>
                         <a class="nav-link efecto_subrayado" href="./galeria.html">Galería</a>
-                        <a class="nav-link efecto_subrayado" href="./sobre_mi.html">Nosotros</a>
                         <a class="nav-link efecto_subrayado active" href="./noticias.html">Noticias</a>
+                        <a class="nav-link efecto_subrayado" href="./sobre_mi.html">Nosotros</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="container">
-        <div class="rounded text-white p-5 mt-5 periodicos row justify-content-center">
-            <div class="col-md-9">
+    <main class="container-fluid">
+        <div class="text-white p-5 mb-5 section_descriptivo_noticias row justify-content-center">
+            <div class="col-md-12">
                 <h3>Principales noticias del mundo de la informática</h3>
                 <p>Te acercamos las recientes novedades a nivel nacional e internacional para que estes siempre
                     actualizado</p>
             </div>
         </div>
-        <div class="mt-5 row justify-content-between">
-            <div class="col-xl-6">
-                <div class="row border rounded overflow-hidden">
-                    <div class="col p-4 flex-column">
-                        <h4>Vuelve conectar igualdad</h4>
-                        <p class="card-text">El programa que entrega notebooks a sus estudiantes y maestros esta de
-                            vuelta</p>
-                        <br>
-                        <a class="navbar-link" href="#">Seguir leyendo</a>
+        <div class="noticias_general pt-3">
+            <div class="mt-5 row justify-content-around">
+                <div class="col-xl-5">
+                    <div class="row border rounded overflow-hidden">
+                        <div class="col p-4 flex-column">
+                            <h4>Vuelve conectar igualdad</h4>
+                            <p class="card-text">El programa que entrega notebooks a sus estudiantes y maestros esta de
+                                vuelta</p>
+                            <br>
+                            <a class="navbar-link" href="#">Seguir leyendo</a>
+                        </div>
+                        <div class="col-auto">
+                            <img src="./img/conectar.jpg" alt="" height="200px" width="auto">
+                        </div>
                     </div>
-                    <div class="col-auto">
-                        <img src="./img/conectar.jpg" alt="" height="200px" width="auto">
+                </div>
+                <div class="col-xl-5">
+                    <div class="row border rounded overflow-hidden">
+                        <div class="col p-4 flex-column">
+                            <h4>Actualizacion de Whatsapp</h4>
+                            <p class="card-text">La app ya trabaja para que puedas pixelar tus imagenes</p>
+                            <br>
+                            <a href="#" class="navbar-link">Seguir leyendo</a>
+                        </div>
+                        <div class="col-auto">
+                            <img src="./img/Whatsapp.jpg" alt="" height="200px" width="250px">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-6">
-                <div class="row border rounded overflow-hidden">
-                    <div class="col p-4 flex-column">
-                        <h4>Actualizacion de Whatsapp</h4>
-                        <p class="card-text">La app ya trabaja para que puedas pixelar tus imagenes</p>
-                        <br>
-                        <a href="#" class="navbar-link">Seguir leyendo</a>
-                    </div>
-                    <div class="col-auto">
-                        <img src="./img/Whatsapp.jpg" alt="" height="200px" width="250px">
-                    </div>
+            <div class="row mx-5">
+                <h2 class="my-5 py-4 border-bottom border-top">Principales noticias del día</h2>
+                <div class="col-xl-8">
+                    <h4> <a class="nav-link d-inline ps-0 efecto_subrayado noticias_titulo"
+                            href="https://www.abc.es/tecnologia/electronica/imagen/abci-sorprende-primer-televisor-oled-97-pulgadas-mundo-202201041225_noticia.html"
+                            target="_blank">
+                            LG sorprende con el primer televisor OLED de 97 pulgadas <br> del mundo</h4></a>
+                    <p class="fechas">17 de Enero por <a href="https://www.linkedin.com/in/matheocaneva/">Matheo</a></p>
+                    <p class="noticias_descripciones">Fue presentado en el CES de Las Vegas. LG anunció que ampliará su
+                        oferta de dispositivos Mini LED,
+                        con
+                        Quantum Dot NanoCell, que según la firma coreana, consigue negros más precisos y colores más
+                        vibrantes.
+                        Eso sí, no todos los modelos del 2022 QNED usarán Mini LED, algo a tener en cuenta.</p>
+                </div>
+                <div class="col-xl-4">
+                    <img src="./img/led.jpg" alt="led_lg_98_pulgadas" class="img_noticias">
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <h2 class="my-5 pb-4 border-bottom">Principales noticias del día</h2>
-            <div class="col-xl-8">
-                <h4> <a class="nav-link d-inline ps-0 efecto_subrayado noticias_titulo"
-                        href="https://www.abc.es/tecnologia/electronica/imagen/abci-sorprende-primer-televisor-oled-97-pulgadas-mundo-202201041225_noticia.html"
-                        target="_blank">
-                        LG sorprende con el primer televisor OLED de 97 pulgadas <br> del mundo</h4></a>
-                <p class="fechas">17 de Enero por <a href="https://www.linkedin.com/in/matheocaneva/">Matheo</a></p>
-                <p class="noticias_descripciones">Fue presentado en el CES de Las Vegas. LG anunció que ampliará su
-                    oferta de dispositivos Mini LED,
-                    con
-                    Quantum Dot NanoCell, que según la firma coreana, consigue negros más precisos y colores más
-                    vibrantes.
-                    Eso sí, no todos los modelos del 2022 QNED usarán Mini LED, algo a tener en cuenta.</p>
-            </div>
-            <div class="col-xl-4">
-                <img src="./img/led.jpg" alt="led_lg_98_pulgadas" class="img_noticias">
-            </div>
-        </div>
-        <div class="row border-top mt-5 py-4">
-            <div class="col-xl-8">
-                <h4> <a class="nav-link d-inline ps-0 efecto_subrayado noticias_titulo"
-                        href="https://www.xataka.com/basics/estafas-sms-guia-para-evitar-virus-robos-informacion-que-hacer-te-pasa"
-                        target="_blank">
-                        Estafas virtuales: Te contamos que hacer cuando recibes un intento de estafa por SMS y como
-                        evitarlo</h4></a>
-                <p class="fechas">18 de Enero por <a href="https://www.linkedin.com/in/matheocaneva/">Matheo</a></p>
-                <p class="noticias_descripciones">Te traemos una guía para saber qué hacer cuando recibes un intento de estafa por SMS, con toda la
-                    información que vas a necesitar para enfrentarte a ellos.</p>
-            </div>
-            <div class="col-xl-4">
-                <img src="./img/phishing.jpg" alt="phishing" class="img_noticias">
+            <div class="row border-top mt-5 mx-5 py-5">
+                <div class="col-xl-8">
+                    <h4> <a class="nav-link d-inline ps-0 efecto_subrayado noticias_titulo"
+                            href="https://www.xataka.com/basics/estafas-sms-guia-para-evitar-virus-robos-informacion-que-hacer-te-pasa"
+                            target="_blank">
+                            Estafas virtuales: Te contamos que hacer cuando recibes un intento de estafa por SMS y como
+                            evitarlo</h4></a>
+                    <p class="fechas">18 de Enero por <a href="https://www.linkedin.com/in/matheocaneva/">Matheo</a></p>
+                    <p class="noticias_descripciones">Te traemos una guía para saber qué hacer cuando recibes un intento
+                        de estafa por SMS, con toda la
+                        información que vas a necesitar para enfrentarte a ellos.</p>
+                </div>
+                <div class="col-xl-4">
+                    <img src="./img/phishing.jpg" alt="phishing" class="img_noticias">
+                </div>
             </div>
         </div>
     </main>
@@ -119,8 +123,8 @@
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
                 <li class="nav-item"><a href="./servicios.html" class="nav-link px-2 text-muted">Servicios</a></li>
                 <li class="nav-item"><a href="./galeria.html" class="nav-link px-2 text-muted">Galería</a></li>
-                <li class="nav-item"><a href="./sobre_mi.html" class="nav-link px-2 text-muted">Nosotros</a></li>
                 <li class="nav-item"><a href="./noticias.html" class="nav-link px-2 text-muted">Noticias</a></li>
+                <li class="nav-item"><a href="./sobre_mi.html" class="nav-link px-2 text-muted">Nosotros</a></li>
             </ul>
             <p class="text-center text-muted">© 2021 Company, Inc</p>
         </div>

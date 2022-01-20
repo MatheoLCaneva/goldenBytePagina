@@ -1,8 +1,9 @@
 .body_servicios {
-    background-image: url(../img/cableadoEdit.jpeg);
-    background-size: cover;
-    background-repeat: repeat;
+    background: -webkit-linear-gradient(to right, $gradienteIzquierdo, $gradienteIzquierdo);
+    background: linear-gradient(to right, $gradienteIzquierdo, $gradienteDerecho), url(../img/fondoPce.jpg);
     background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 

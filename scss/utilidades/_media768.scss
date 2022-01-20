@@ -1,4 +1,13 @@
 @media (max-width:768px) {
+    .navbar_alineacion{
+        .navbar-nav{
+            .efecto_subrayado{
+                background-image: none;
+                transition: none;
+            }
+        }
+    }
+
     .section_descriptivo h1 {
         font-size: 35px;
     }
@@ -91,6 +100,13 @@
     .img_galeria {
         width: 200px;
         height: 200px;
+    }
+
+    .galeria_titulo_fotos{
+        font-size: medium;
+    }
+    .galeria_descripcion_fotos{
+        font-size: small;
     }
 
     .descripcion_presentacion {

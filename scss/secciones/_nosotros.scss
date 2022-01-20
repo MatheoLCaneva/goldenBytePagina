@@ -1,8 +1,8 @@
 .body_descripcion {
-    background-image: url(../img/fotoCodigo.jpg);
-    background-size: cover;
-    background-repeat: repeat;
+    background: linear-gradient(to left, $gradienteIzquierdoOscuro, $gradienteDerechoOscuro);
     background-attachment: fixed;
+    background-size: cover;
+    // background-position: center;
 }
 
 .descripcion_presentacion {

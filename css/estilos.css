@@ -78,18 +78,12 @@ p {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif; }
 
-.section_descriptivo_noticias {
-  background-image: url(../img/fondoPce.jpg);
-  background-position: center;
-  background-size: cover; }
-
 .section_descriptivo_servicios {
   height: 400px; }
 
 .body_index {
-  background-image: url(../img/fotoCodigo.jpg);
-  background-size: cover;
-  background-repeat: repeat;
+  background: -webkit-linear-gradient(to right, rgba(43, 61, 79, 0.3), rgba(43, 61, 79, 0.3));
+  background: linear-gradient(to right, rgba(43, 61, 79, 0.3), rgba(189, 195, 199, 0.3)), url(../img/fotoCodigo.jpg);
   background-attachment: fixed; }
 
 .section_descriptivo {
@@ -170,10 +164,11 @@ p {
     font-size: 25px; }
 
 .body_servicios {
-  background-image: url(../img/cableadoEdit.jpeg);
+  background: -webkit-linear-gradient(to right, rgba(43, 61, 79, 0.3), rgba(43, 61, 79, 0.3));
+  background: linear-gradient(to right, rgba(43, 61, 79, 0.3), rgba(189, 195, 199, 0.3)), url(../img/fondoPce.jpg);
+  background-attachment: fixed;
   background-size: cover;
-  background-repeat: repeat;
-  background-attachment: fixed; }
+  background-position: center; }
 
 .listado_servicios {
   display: grid;
@@ -194,20 +189,32 @@ p {
     grid-area: tercero;
     display: flex; }
 
-.img_galeria {
-  height: 300px;
-  width: 300px;
-  overflow: hidden;
-  border-radius: 10%; }
-  .img_galeria:hover {
-    transform: scale(1.1);
-    transition: 1s; }
+.section_descriptivo_galeria {
+  background: linear-gradient(to left, #d7d2cc, #304352);
+  color: white;
+  height: 400px; }
+  .section_descriptivo_galeria h1 {
+    font-size: 40px; }
+  .section_descriptivo_galeria h4 {
+    font-size: 20px; }
+
+.imghvr-zoom-out {
+  background: linear-gradient(to right, #d7d2cc, #304352); }
+  .imghvr-zoom-out figcaption {
+    background: linear-gradient(to right, #d7d2cc, #304352); }
+  .imghvr-zoom-out .img_galeria {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10%; }
+    .imghvr-zoom-out .img_galeria:hover {
+      transform: scale(1.1);
+      transition: 1s; }
 
 .body_descripcion {
-  background-image: url(../img/fotoCodigo.jpg);
-  background-size: cover;
-  background-repeat: repeat;
-  background-attachment: fixed; }
+  background: linear-gradient(to left, #d7d2cc, #304352);
+  background-attachment: fixed;
+  background-size: cover; }
 
 .descripcion_presentacion {
   background-color: white; }
@@ -246,11 +253,29 @@ p {
   .descripcion_personal .texto_normal {
     font-weight: normal; }
 
-.periodicos {
-  background-image: url(../img/periodicos2.jpg);
-  background-repeat: round;
+.section_descriptivo_noticias {
+  background: -webkit-linear-gradient(to right, rgba(43, 61, 79, 0.3), rgba(43, 61, 79, 0.3));
+  background: linear-gradient(to right, rgba(43, 61, 79, 0.3), rgba(189, 195, 199, 0.3)), url(../img/mundo.jpg);
+  background-position: center;
+  background-attachment: fixed;
   background-size: cover;
-  background-attachment: fixed; }
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+  height: 400px;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  .section_descriptivo_noticias h3 {
+    font-size: 40px;
+    animation-name: backInRight;
+    animation-duration: 1s;
+    animation-iteration-count: 1; }
+  .section_descriptivo_noticias p {
+    font-size: 20px;
+    animation-name: backInLeft;
+    animation-duration: 1s;
+    animation-iteration-count: 1; }
 
 .fechas {
   color: #585555;
@@ -261,6 +286,9 @@ p {
   height: 200px; }
 
 @media (max-width: 768px) {
+  .navbar_alineacion .navbar-nav .efecto_subrayado {
+    background-image: none;
+    transition: none; }
   .section_descriptivo h1 {
     font-size: 35px; }
   .section_descriptivo p {
@@ -316,6 +344,10 @@ p {
   .img_galeria {
     width: 200px;
     height: 200px; }
+  .galeria_titulo_fotos {
+    font-size: medium; }
+  .galeria_descripcion_fotos {
+    font-size: small; }
   .descripcion_presentacion .alineado_presentacion {
     font-size: 17px;
     padding-left: 86px;

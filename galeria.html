@@ -12,18 +12,20 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="icon" type="image/x-icon" href="img/logo.ico">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/2.0.0/css/imagehover.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
-    <title>Bienvenido</title>
+    <title>Galería</title>
 </head>
 
 <body>
     <header>
         <!-- Navegacion entre secciones -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 py-sm-0">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"> <img src="./img/logo.png" alt="goldenByte" class="logoGolden"> Golden
+                <a class="navbar-brand" href="#"> <img src="./img/logo.png" alt="goldenByte"
+                        class="logoGolden d-none d-sm-inline-block"> Golden
                     Byte</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -35,8 +37,8 @@
                         <a class="nav-link efecto_subrayado" aria-current="page" href="./index.html">Inicio</a>
                         <a class="nav-link efecto_subrayado" href="./servicios.html">Servicios</a>
                         <a class="nav-link active efecto_subrayado" href="./galeria.html">Galería</a>
-                        <a class="nav-link efecto_subrayado" href="./sobre_mi.html">Nosotros</a>
                         <a class="nav-link efecto_subrayado proximamente" href="./noticias.html">Noticias</a>
+                        <a class="nav-link efecto_subrayado" href="./sobre_mi.html">Nosotros</a>
                     </div>
                 </div>
             </div>
@@ -44,38 +46,113 @@
     </header>
     <main class="container-fluid">
         <div class="row">
-            <div class="row py-5">
-                <h1 class="col-12 text-center">Galería</h1>
-                <h4 class="col-12 text-center">Te mostramos un poco lo que hacemos</h4>
+            <div class="row py-5 section_descriptivo_galeria pb-4 border-bottom row align-content-center">
+                <h1 class="col-12 text-center animate__animated animate__backInRight">Galería</h1>
+                <h4 class="col-12 text-center animate__animated animate__backInLeft">Te mostramos un poco lo que hacemos
+                </h4>
             </div>
-            <div class="row justify-content-evenly py-5 text-xl-center">
-                <div class="overflow-hidden col-sm-4 col-xl-4 text-center"><img src="./img/pcNegra2.jpg" alt=""
-                        class="img_galeria img-thumbnail col-12"></div>
-                <div class="overflow-hidden col-6 col-sm-4 col-xl-4"><img src="./img/pcRGB.jpg" alt=""
-                        class="img_galeria  img-thumbnail">
+            <div class="row justify-content-evenly py-5 text-center flex-sm-column flex-md-row gap-3 gap-md-0">
+                <div class="overflow-hidden col-sm-12 col-md-4 col-xl-4 text-center">
+                    <figure class="imghvr-zoom-out">
+                        <img src="./img/pcNegra2.jpg" class="img_galeria">
+                        <figcaption>
+                            <h4 class="galeria_titulo_fotos ih-fade-down ih-delay-sm">Pre Armado Pc Gamer</h4>
+                            <p class="galeria_descripcion_fotos ih-zoom-in ih-delay-md">Los componentes fueron provistos
+                                por nuestra tienda.
+                            </p>
+                        </figcaption>
+                    </figure>
                 </div>
-                <div class="overflow-hidden col-6 col-sm-4 col-xl-4"><img src="./img/pcDevastator.jpg" alt=""
-                        class="img_galeria  img-thumbnail"></div>
+                <div class="overflow-hidden col-sm-12 col-md-4 col-xl-4 text-center">
+                    <figure class="imghvr-zoom-out">
+                        <img src="./img/pcRGB.jpg" class="img_galeria">
+                        <figcaption>
+                            <h4 class="galeria_titulo_fotos ih-fade-down ih-delay-sm">Pre Armado Pc Gamer Gama Baja</h4>
+                            <p class="galeria_descripcion_fotos ih-zoom-in ih-delay-md">Componentes provistos por
+                                nuestra tienda. Entregada en una semana.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="overflow-hidden col-sm-12 col-md-4 col-xl-4 text-center">
+                    <figure class="imghvr-zoom-out">
+                        <img src="./img/pcDevastator.jpg" class="img_galeria">
+                        <figcaption>
+                            <h4 class="galeria_titulo_fotos ih-fade-down ih-delay-sm">Pre Armado Pc Gamer Gama Media
+                            </h4>
+                            <p class="galeria_descripcion_fotos ih-zoom-in ih-delay-md">Nos amoldamos a tus necesidades
+                                para brindarte la Pc de tus sueños</p>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
 
-            <div class="row justify-content-evenly py-5 text-xl-center" data-aos="zoom-in-left">
-                <div class="overflow-hidden col-12 col-sm-4 col-xl-4 text-center"><img src="./img/pcNegra2Armada.jpg"
-                        alt="" class="img_galeria  img-thumbnail "></div>
-                <div class="overflow-hidden col-6 col-sm-4 col-xl-4"><img src="./img/pcRGBArmada.jpg" alt=""
-                        class="img_galeria  img-thumbnail">
+            <div class="row justify-content-evenly py-5 text-center flex-sm-column flex-md-row gap-3 gap-md-0"
+                data-aos="zoom-in-left">
+                <div class="overflow-hidden col-sm-12 col-md-4 col-xl-4 text-center">
+                    <figure class="imghvr-zoom-out">
+                        <img src="./img/pcNegra2Armada.jpg" class="img_galeria">
+                        <figcaption>
+                            <h4 class="galeria_titulo_fotos ih-fade-down ih-delay-sm">Armado finalizado</h4>
+                            <p class="galeria_descripcion_fotos ih-zoom-in ih-delay-md">Armados e instalaciones de
+                                componentes rgb para que los disfrutes al maximo </p>
+                        </figcaption>
+                    </figure>
                 </div>
-                <div class="overflow-hidden col-6 col-sm-4 col-xl-4"><img src="./img/pcDevastatorArmada.jpg" alt=""
-                        class="img_galeria  img-thumbnail img-fluid"></div>
+                <div class="overflow-hidden col-sm-12 col-md-4 col-xl-4 text-center">
+                    <figure class="imghvr-zoom-out">
+                        <img src="./img/pcRGBArmada.jpg" class="img_galeria">
+                        <figcaption>
+                            <h4 class="galeria_titulo_fotos ih-fade-down ih-delay-sm">Armado con ventiladores RGB
+                                delanteros</h4>
+                            <p class="galeria_descripcion_fotos ih-zoom-in ih-delay-md">Nada importa mas que un flujo de
+                                aire correcto para disipar el calor</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="overflow-hidden col-sm-12 col-md-4 col-xl-4 text-center">
+                    <figure class="imghvr-zoom-out">
+                        <img src="./img/pcDevastatorArmada.jpg" class="img_galeria">
+                        <figcaption>
+                            <h4 class="galeria_titulo_fotos ih-fade-down ih-delay-sm">Armado Gamer Basico-Medio</h4>
+                            <p class="galeria_descripcion_fotos ih-zoom-in ih-delay-md">Nos importa brindarte un
+                                servicio para que vuelvas cuando necesites</p>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
 
-            <div class="row justify-content-evenly py-5 text-xl-center" data-aos="zoom-in-left">
-                <div class="overflow-hidden col-12 col-sm-4 col-xl-4 text-center"><img src="./img/notebook1.jpg" alt=""
-                        class="img_galeria  img-thumbnail img-fluid "></div>
-                <div class="overflow-hidden col-6 col-sm-4 col-xl-4"><img src="./img/notebook2.jpg" alt=""
-                        class="img_galeria  img-thumbnail img-fluid">
+            <div class="row justify-content-evenly py-5 text-center flex-sm-column flex-md-row gap-3 gap-md-0"
+                data-aos="zoom-in-left">
+                <div class="overflow-hidden col-sm-12 col-md-4 col-xl-4 text-center">
+                    <figure class="imghvr-zoom-out">
+                        <img src="./img/notebook1.jpg" class="img_galeria">
+                        <figcaption>
+                            <h4 class="galeria_titulo_fotos ih-fade-down ih-delay-sm">Instalacion de SSD</h4>
+                            <p class="galeria_descripcion_fotos ih-zoom-in ih-delay-md">Maximizamos la velocidad de tu
+                                PC con los mejores componentes</p>
+                        </figcaption>
+                    </figure>
                 </div>
-                <div class="overflow-hidden col-6 col-sm-4 col-xl-4"><img src="./img/notebook3.jpg" alt=""
-                        class="img_galeria  img-thumbnail img-fluid"></div>
+                <div class="overflow-hidden col-sm-12 col-md-4 col-xl-4 text-center">
+                    <figure class="imghvr-zoom-out">
+                        <img src="./img/notebook2.jpg" class="img_galeria">
+                        <figcaption>
+                            <h4 class="galeria_titulo_fotos ih-fade-down ih-delay-sm">Limpieza interna</h4>
+                            <p class="galeria_descripcion_fotos ih-zoom-in ih-delay-md">Queremos que tu equipo luzca
+                                como nuevo retocando cada componente de su interior</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="overflow-hidden col-sm-12 col-md-4 col-xl-4 text-center">
+                    <figure class="imghvr-zoom-out">
+                        <img src="./img/notebook3.jpg" class="img_galeria">
+                        <figcaption>
+                            <h4 class="galeria_titulo_fotos ih-fade-down ih-delay-sm">Reparamos a tu Equipo</h4>
+                            <p class="galeria_descripcion_fotos ih-zoom-in ih-delay-md">Si no esta funcionando bien o
+                                queres cambiarle algo, estas en el lugar indicado</p>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
     </main>
@@ -117,8 +194,8 @@
                 <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">Inicio</a></li>
                 <li class="nav-item"><a href="./servicios.html" class="nav-link px-2 text-muted">Servicios</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Galería</a></li>
-                <li class="nav-item"><a href="./sobre_mi.html" class="nav-link px-2 text-muted">Nosotros</a></li>
                 <li class="nav-item"><a href="./noticias.html" class="nav-link px-2 text-muted">Noticias</a></li>
+                <li class="nav-item"><a href="./sobre_mi.html" class="nav-link px-2 text-muted">Nosotros</a></li>
             </ul>
             <p class="text-center text-muted">© 2021 Company, Inc</p>
         </div>

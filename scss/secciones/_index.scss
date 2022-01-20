@@ -5,20 +5,13 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.section_descriptivo_noticias {
-    background-image: url(../img/fondoPce.jpg);
-    background-position: center;
-    background-size: cover
-}
-
 .section_descriptivo_servicios {
     height: 400px;
 }
 
 .body_index {
-    background-image: url(../img/fotoCodigo.jpg);
-    background-size: cover;
-    background-repeat: repeat;
+    background: -webkit-linear-gradient(to right, $gradienteIzquierdo, $gradienteIzquierdo);
+    background: linear-gradient(to right, $gradienteIzquierdo, $gradienteDerecho), url(../img/fotoCodigo.jpg);
     background-attachment: fixed;
 }
 

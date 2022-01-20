@@ -28,7 +28,7 @@
     display: flex;
     background-size: cover;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: white;
     font-weight: bold;
     height: 400px;
     flex-direction: column;
@@ -53,7 +53,7 @@
 /* DESCRIPCION DE NEGOCIO */
 .divMainDescripcion {
     display: flex;
-    background-color: rgb(240, 239, 239);
+    background-color: $colorPrincipal;
     padding-top: 44px;
     padding-bottom: 56px;
     font-family: 'Montserrat', sans-serif;
@@ -64,7 +64,7 @@
     h4 {
         font-weight: normal;
         font-size: 25px;
-        color: rgb(88, 85, 85);
+        color: $colorLetras;
         line-height: 0;
     }
 
@@ -82,7 +82,7 @@
     .main_titulo_servicios {
         grid-area: titulo;
         font-weight: normal;
-        color: rgb(88, 85, 85);
+        color: $colorLetras;
         font-family: 'Montserrat', sans-serif;
         display: inline-block;
         border-width: 2px;

@@ -65,7 +65,7 @@ p {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  border: solid 3px #797777;
+  border: solid 1px #585555;
   flex: none; }
 
 .alineado {
@@ -253,7 +253,7 @@ p {
   background-attachment: fixed; }
 
 .fechas {
-  color: #727272;
+  color: #585555;
   margin-bottom: 1rem; }
 
 .img_noticias {

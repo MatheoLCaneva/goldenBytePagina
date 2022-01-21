@@ -12,12 +12,13 @@
     }
 
 }
-
 .imghvr-zoom-out {
     background: linear-gradient(to right, $gradienteIzquierdoOscuro, $gradienteDerechoOscuro);
+    border-radius: 10%;
 
     figcaption {
         background: linear-gradient(to right, $gradienteIzquierdoOscuro, $gradienteDerechoOscuro);
+        border-radius: 10%;
     }
 
     .img_galeria {
@@ -25,10 +26,5 @@
         width: 300px;
         overflow: hidden;
         border-radius: 10%;
-
-        &:hover {
-            transform: scale(1.1);
-            transition: 1s;
-        }
     }
 }

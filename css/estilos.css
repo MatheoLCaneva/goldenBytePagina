@@ -1,24 +1,35 @@
 header {
   position: sticky;
   top: 0%;
-  z-index: 2; }
-  header .navbar {
-    margin: 0;
-    padding: 0; }
-    header .navbar .container-fluid .logoGolden {
-      width: 10rem; }
+  z-index: 2;
+}
+
+header .navbar {
+  margin: 0;
+  padding: 0;
+}
+
+header .navbar .container-fluid .logoGolden {
+  width: 10rem;
+}
 
 .navbar_alineacion {
   justify-content: end;
-  padding-right: 14rem; }
-  .navbar_alineacion .navbar-nav .efecto_subrayado {
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s; }
-    .navbar_alineacion .navbar-nav .efecto_subrayado:hover, .navbar_alineacion .navbar-nav .efecto_subrayado:focus {
-      background-size: 100% 2px; }
+  padding-right: 14rem;
+}
+
+.navbar_alineacion .navbar-nav .efecto_subrayado {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+}
+
+.navbar_alineacion .navbar-nav .efecto_subrayado:hover,
+.navbar_alineacion .navbar-nav .efecto_subrayado:focus {
+  background-size: 100% 2px;
+}
 
 .footer_general {
   text-align: center;
@@ -27,64 +38,86 @@ header {
   padding-top: 35px;
   padding-bottom: 35px;
   font-family: 'Montserrat', sans-serif;
-  justify-content: space-evenly; }
-  .footer_general .footer_contacto {
-    text-align: left; }
-    .footer_general .footer_contacto .estilos_contacto {
-      font-weight: normal;
-      line-height: 30px; }
-  .footer_general .parteIzquierda {
-    display: inline-block; }
-  .footer_general .parteDerecha {
-    display: inline-block; }
-    .footer_general .parteDerecha .comentario {
-      height: 44px;
-      width: 348px;
-      resize: none; }
-    .footer_general .parteDerecha .estilos_contacto {
-      font-weight: normal;
-      line-height: 30px; }
-    .footer_general .parteDerecha .btn_confirmar {
-      display: block;
-      margin-left: 146px;
-      padding-left: 37px;
-      padding-right: 37px;
-      margin-top: 10px;
-      appearance: inherit; }
+  justify-content: space-evenly;
+}
+
+.footer_general .footer_contacto {
+  text-align: left;
+}
+
+.footer_general .footer_contacto .estilos_contacto {
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.footer_general .parteIzquierda {
+  display: inline-block;
+}
+
+.footer_general .parteDerecha {
+  display: inline-block;
+}
+
+.footer_general .parteDerecha .comentario {
+  height: 44px;
+  width: 348px;
+  resize: none;
+}
+
+.footer_general .parteDerecha .estilos_contacto {
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.footer_general .parteDerecha .btn_confirmar {
+  display: block;
+  margin-left: 146px;
+  padding-left: 37px;
+  padding-right: 37px;
+  margin-top: 10px;
+  appearance: inherit;
+}
 
 p {
-  margin: 0%; }
+  margin: 0%;
+}
 
 .descripcion {
   display: inline-block;
   color: #585555;
   text-align: center;
-  font-weight: normal; }
+  font-weight: normal;
+}
 
 .imgServicios {
   height: 200px;
   width: 200px;
   border-radius: 50%;
   border: solid 1px #585555;
-  flex: none; }
+  flex: none;
+}
 
 .alineado {
   align-self: center;
-  font-size: unset; }
+  font-size: unset;
+}
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+}
 
 .section_descriptivo_servicios {
-  height: 400px; }
+  height: 400px;
+}
 
 .body_index {
   background: -webkit-linear-gradient(to right, rgba(43, 61, 79, 0.3), rgba(43, 61, 79, 0.3));
   background: linear-gradient(to right, rgba(43, 61, 79, 0.3), rgba(189, 195, 199, 0.3)), url(../img/fotoCodigo.jpg);
-  background-attachment: fixed; }
+  background-attachment: fixed;
+}
 
 .section_descriptivo {
   display: flex;
@@ -95,17 +128,22 @@ p {
   height: 400px;
   flex-direction: column;
   justify-content: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
-  .section_descriptivo h1 {
-    font-size: 40px;
-    animation-name: backInRight;
-    animation-duration: 1s;
-    animation-iteration-count: 1; }
-  .section_descriptivo p {
-    font-size: 20px;
-    animation: backInLeft;
-    animation-iteration-count: 1;
-    animation-duration: 1s; }
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.section_descriptivo h1 {
+  font-size: 40px;
+  animation-name: backInRight;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.section_descriptivo p {
+  font-size: 20px;
+  animation: backInLeft;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+}
 
 /* DESCRIPCION DE NEGOCIO */
 .divMainDescripcion {
@@ -116,38 +154,52 @@ p {
   font-family: 'Montserrat', sans-serif;
   flex-direction: column;
   align-items: center;
-  line-height: 30px; }
-  .divMainDescripcion h4 {
-    font-weight: normal;
-    font-size: 25px;
-    color: #585555;
-    line-height: 0; }
+  line-height: 30px;
+}
+
+.divMainDescripcion h4 {
+  font-weight: normal;
+  font-size: 25px;
+  color: #585555;
+  line-height: 0;
+}
 
 .main_div_servicios {
   display: grid;
   background-color: white;
   grid-template-rows: 62px 264px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "titulo titulo titulo" "componentes pc codigo";
+  grid-template-areas: "titulo titulo titulo""componentes pc codigo";
   justify-items: center;
-  padding-top: 41px; }
-  .main_div_servicios .main_titulo_servicios {
-    grid-area: titulo;
-    font-weight: normal;
-    color: #585555;
-    font-family: 'Montserrat', sans-serif;
-    display: inline-block;
-    border-width: 2px; }
-  .main_div_servicios .main_servicios_pos {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .main_div_servicios .vistaIzquierda {
-    grid-area: componentes; }
-  .main_div_servicios .vistaCentro {
-    grid-area: pc; }
-  .main_div_servicios .vistaDerecha {
-    grid-area: codigo; }
+  padding-top: 41px;
+}
+
+.main_div_servicios .main_titulo_servicios {
+  grid-area: titulo;
+  font-weight: normal;
+  color: #585555;
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  border-width: 2px;
+}
+
+.main_div_servicios .main_servicios_pos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_div_servicios .vistaIzquierda {
+  grid-area: componentes;
+}
+
+.main_div_servicios .vistaCentro {
+  grid-area: pc;
+}
+
+.main_div_servicios .vistaDerecha {
+  grid-area: codigo;
+}
 
 .main_section_cierre {
   display: flex;
@@ -156,102 +208,152 @@ p {
   background-size: 1550px;
   height: 333px;
   flex-direction: column;
-  justify-content: center; }
-  .main_section_cierre h3 {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-size: 25px; }
+  justify-content: center;
+}
+
+.main_section_cierre h3 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 25px;
+}
 
 .body_servicios {
   background: -webkit-linear-gradient(to right, rgba(43, 61, 79, 0.3), rgba(43, 61, 79, 0.3));
   background: linear-gradient(to right, rgba(43, 61, 79, 0.3), rgba(189, 195, 199, 0.3)), url(../img/fondoPce.jpg);
   background-attachment: fixed;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+}
 
 .listado_servicios {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "primero" "segundo" "tercero";
+  grid-template-areas: "primero"
+    "segundo"
+    "tercero";
   background-color: #f0efef;
   padding: 65px 0 65px 65px;
-  align-items: center; }
-  .listado_servicios .primer_servicio {
-    grid-area: primero;
-    display: flex;
-    margin-bottom: 69px; }
-  .listado_servicios .segundo_servicio {
-    grid-area: segundo;
-    display: flex;
-    margin-bottom: 45px; }
-  .listado_servicios .tercer_servicio {
-    grid-area: tercero;
-    display: flex; }
+  align-items: center;
+}
+
+.listado_servicios .primer_servicio {
+  grid-area: primero;
+  display: flex;
+  margin-bottom: 69px;
+}
+
+.listado_servicios .segundo_servicio {
+  grid-area: segundo;
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.listado_servicios .tercer_servicio {
+  grid-area: tercero;
+  display: flex;
+}
 
 .section_descriptivo_galeria {
   background: linear-gradient(to left, #d7d2cc, #304352);
   color: white;
-  height: 400px; }
-  .section_descriptivo_galeria h1 {
-    font-size: 40px; }
-  .section_descriptivo_galeria h4 {
-    font-size: 20px; }
+  height: 400px;
+}
+
+.section_descriptivo_galeria h1 {
+  font-size: 40px;
+}
+
+.section_descriptivo_galeria h4 {
+  font-size: 20px;
+}
 
 .imghvr-zoom-out {
-  background: linear-gradient(to right, #d7d2cc, #304352); }
-  .imghvr-zoom-out figcaption {
-    background: linear-gradient(to right, #d7d2cc, #304352); }
-  .imghvr-zoom-out .img_galeria {
-    height: 300px;
-    width: 300px;
-    overflow: hidden;
-    border-radius: 10%; }
-    .imghvr-zoom-out .img_galeria:hover {
-      transform: scale(1.1);
-      transition: 1s; }
+  background: linear-gradient(to right, #d7d2cc, #304352);
+}
+
+.imghvr-zoom-out figcaption {
+  background: linear-gradient(to right, #d7d2cc, #304352);
+}
+
+.imghvr-zoom-out .img_galeria {
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 10%;
+}
+
+.imghvr-zoom-out .img_galeria:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
 
 .body_descripcion {
   background: linear-gradient(to left, #d7d2cc, #304352);
   background-attachment: fixed;
-  background-size: cover; }
+  background-size: cover;
+}
 
 .descripcion_presentacion {
-  background-color: white; }
-  .descripcion_presentacion .alineado_presentacion {
-    padding: 35px 0 35px 142px;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 30px;
-    background-color: white; }
+  background-color: white;
+}
+
+.descripcion_presentacion .alineado_presentacion {
+  padding: 35px 0 35px 142px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 30px;
+  background-color: white;
+}
 
 .descripcion_personal {
   background-color: #f0efef;
-  padding: 60px 190px 57px 142px; }
-  .descripcion_personal .contenedor_descripcion {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .4fr 1fr 1fr;
-    grid-template-areas: "titulo titulo titulo" "solProblemas postVenta resolucion" "respuestas seguimiento none"; }
-    .descripcion_personal .contenedor_descripcion .titulo_descripcion_personal {
-      grid-area: titulo;
-      justify-self: center; }
-    .descripcion_personal .contenedor_descripcion .descripcion_solucion_problemas {
-      grid-area: solProblemas; }
-    .descripcion_personal .contenedor_descripcion .descripcion_post_venta {
-      grid-area: postVenta; }
-    .descripcion_personal .contenedor_descripcion .descripcion_resolucion {
-      grid-area: resolucion; }
-    .descripcion_personal .contenedor_descripcion .descripcion_respuestas {
-      grid-area: respuestas; }
-    .descripcion_personal .contenedor_descripcion .descripcion_seguimiento {
-      grid-area: seguimiento; }
-  .descripcion_personal .alineacion_descripcion_personal {
-    text-align: center; }
-  .descripcion_personal .far,
-  .descripcion_personal .fas {
-    font-size: 20px; }
-  .descripcion_personal .texto_normal {
-    font-weight: normal; }
+  padding: 60px 190px 57px 142px;
+}
+
+.descripcion_personal .contenedor_descripcion {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: .4fr 1fr 1fr;
+  grid-template-areas: "titulo titulo titulo""solProblemas postVenta resolucion""respuestas seguimiento none";
+}
+
+.descripcion_personal .contenedor_descripcion .titulo_descripcion_personal {
+  grid-area: titulo;
+  justify-self: center;
+}
+
+.descripcion_personal .contenedor_descripcion .descripcion_solucion_problemas {
+  grid-area: solProblemas;
+}
+
+.descripcion_personal .contenedor_descripcion .descripcion_post_venta {
+  grid-area: postVenta;
+}
+
+.descripcion_personal .contenedor_descripcion .descripcion_resolucion {
+  grid-area: resolucion;
+}
+
+.descripcion_personal .contenedor_descripcion .descripcion_respuestas {
+  grid-area: respuestas;
+}
+
+.descripcion_personal .contenedor_descripcion .descripcion_seguimiento {
+  grid-area: seguimiento;
+}
+
+.descripcion_personal .alineacion_descripcion_personal {
+  text-align: center;
+}
+
+.descripcion_personal .far,
+.descripcion_personal .fas {
+  font-size: 20px;
+}
+
+.descripcion_personal .texto_normal {
+  font-weight: normal;
+}
 
 .section_descriptivo_noticias {
   background: -webkit-linear-gradient(to right, rgba(43, 61, 79, 0.3), rgba(43, 61, 79, 0.3));
@@ -265,162 +367,265 @@ p {
   height: 400px;
   flex-direction: column;
   justify-content: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
-  .section_descriptivo_noticias h3 {
-    font-size: 40px;
-    animation-name: backInRight;
-    animation-duration: 1s;
-    animation-iteration-count: 1; }
-  .section_descriptivo_noticias p {
-    font-size: 20px;
-    animation-name: backInLeft;
-    animation-duration: 1s;
-    animation-iteration-count: 1; }
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.section_descriptivo_noticias h3 {
+  font-size: 40px;
+  animation-name: backInRight;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.section_descriptivo_noticias p {
+  font-size: 20px;
+  animation-name: backInLeft;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
 
 .fechas {
   color: #585555;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+}
 
 .img_noticias {
   width: auto;
-  height: 200px; }
+  height: 200px;
+}
 
 @media (max-width: 768px) {
   .navbar_alineacion .navbar-nav .efecto_subrayado {
     background-image: none;
-    transition: none; }
+    transition: none;
+  }
+
   .section_descriptivo h1 {
-    font-size: 35px; }
+    font-size: 35px;
+  }
+
   .section_descriptivo p {
-    font-size: 15px; }
+    font-size: 15px;
+  }
+
   .divMainDescripcion h4 {
     width: 248px;
-    font-size: 20px; }
+    font-size: 20px;
+  }
+
   .main_div_servicios {
     grid-template-columns: 1fr;
     grid-template-rows: .3fr 1fr 1fr 1fr;
-    grid-template-areas: "titulo" "componentes" "pc" "codigo";
-    justify-items: center; }
+    grid-template-areas: "titulo""componentes""pc""codigo";
+    justify-items: center;
+  }
+
   .listado_servicios {
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "primero" "segundo" "tercero";
+    grid-template-areas: "primero""segundo""tercero";
     justify-items: center;
-    padding-left: 0%; }
-    .listado_servicios .primer_servicio {
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 0%; }
-    .listado_servicios .segundo_servicio {
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 0%; }
-    .listado_servicios .tercer_servicio {
-      flex-direction: column;
-      align-items: center; }
-    .listado_servicios .alineado {
-      font-size: 13px; }
+    padding-left: 0%;
+  }
+
+  .listado_servicios .primer_servicio {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0%;
+  }
+
+  .listado_servicios .segundo_servicio {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0%;
+  }
+
+  .listado_servicios .tercer_servicio {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .listado_servicios .alineado {
+    font-size: 13px;
+  }
+
   .imgServicios {
     height: 150px;
     width: 150px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+  }
+
   .main_section_cierre h3 {
     font-size: 16px;
-    padding: 0 79px; }
+    padding: 0 79px;
+  }
+
   .footer_general {
     flex-direction: column;
-    align-items: center; }
-    .footer_general .subrayado {
-      font-size: 20px; }
-    .footer_general .alineacionContacto {
-      font-size: 16px; }
-    .footer_general input {
-      font-size: small; }
-    .footer_general .footer_formulario {
-      margin-top: 40px; }
-      .footer_general .footer_formulario .alineacionFormulario {
-        font-size: 16px; }
-      .footer_general .footer_formulario .btn_confirmar {
-        margin-left: 116px; }
+    align-items: center;
+  }
+
+  .footer_general .subrayado {
+    font-size: 20px;
+  }
+
+  .footer_general .alineacionContacto {
+    font-size: 16px;
+  }
+
+  .footer_general input {
+    font-size: small;
+  }
+
+  .footer_general .footer_formulario {
+    margin-top: 40px;
+  }
+
+  .footer_general .footer_formulario .alineacionFormulario {
+    font-size: 16px;
+  }
+
+  .footer_general .footer_formulario .btn_confirmar {
+    margin-left: 116px;
+  }
+
   .img_galeria {
     width: 200px;
-    height: 200px; }
+    height: 200px;
+  }
+
   .galeria_titulo_fotos {
-    font-size: medium; }
+    font-size: medium;
+  }
+
   .galeria_descripcion_fotos {
-    font-size: small; }
+    font-size: small;
+  }
+
   .descripcion_presentacion .alineado_presentacion {
     font-size: 17px;
     padding-left: 86px;
     padding-right: 44px;
-    margin-right: 0; }
+    margin-right: 0;
+  }
+
   .descripcion_personal {
     padding: 60px 6px 60px 6px;
-    font-size: 13px; }
-    .descripcion_personal .far,
-    .descripcion_personal .fas {
-      font-size: 17px; }
+    font-size: 13px;
+  }
+
+  .descripcion_personal .far,
+  .descripcion_personal .fas {
+    font-size: 17px;
+  }
+
   .noticias_titulo {
-    font-size: medium; }
+    font-size: medium;
+  }
+
   .noticias_descripciones {
-    font-size: small; }
+    font-size: small;
+  }
+
   .fechas {
-    font-size: medium; } }
+    font-size: medium;
+  }
+}
 
 @media (max-width: 400px) {
   .section_descriptivo h1 {
-    font-size: 30px; }
+    font-size: 30px;
+  }
+
   .divMainDescripcion p {
-    font-size: smaller; }
+    font-size: smaller;
+  }
+
   .main_div_servicios {
     grid-template-rows: 15vh 1.2fr 1.2fr 1fr;
-    grid-template-areas: "titulo" "componentes" "pc" "codigo";
+    grid-template-areas: "titulo""componentes""pc""codigo";
     grid-template-columns: 1fr;
     justify-items: center;
     padding-bottom: 30px;
-    padding-top: 35px; }
-    .main_div_servicios .main_titulo_servicios {
-      font-size: 19px; }
+    padding-top: 35px;
+  }
+
+  .main_div_servicios .main_titulo_servicios {
+    font-size: 19px;
+  }
+
   .listado_servicios {
     justify-items: center;
-    padding-left: 0; }
-    .listado_servicios .primer_servicio,
-    .listado_servicios .segundo_servicio {
-      margin-bottom: 0%; }
-    .listado_servicios .alineado {
-      font-size: 12px;
-      padding: 0 35px; }
+    padding-left: 0;
+  }
+
+  .listado_servicios .primer_servicio,
+  .listado_servicios .segundo_servicio {
+    margin-bottom: 0%;
+  }
+
+  .listado_servicios .alineado {
+    font-size: 12px;
+    padding: 0 35px;
+  }
+
   .main_section_cierre h3 {
     font-size: 15px;
-    padding: 0%; }
+    padding: 0%;
+  }
+
   .descripcion_presentacion .alineado_presentacion {
     font-size: 12px;
-    padding: 0 0 0 20px; }
+    padding: 0 0 0 20px;
+  }
+
   .descripcion_personal {
     grid-template-columns: 1fr;
     grid-template-rows: .7fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "titulo" "solProblemas" "postVenta" "resolucion" "respuestas" "seguimiento";
+    grid-template-areas: "titulo""solProblemas""postVenta""resolucion""respuestas""seguimiento";
     background-color: #f0efef;
     font-size: x-small;
-    padding: 30px 0; }
-    .descripcion_personal .titulo_descripcion_personal {
-      font-size: 22px; }
-    .descripcion_personal .far,
-    .descripcion_personal .fas {
-      font-size: 12px; }
+    padding: 30px 0;
+  }
+
+  .descripcion_personal .titulo_descripcion_personal {
+    font-size: 22px;
+  }
+
+  .descripcion_personal .far,
+  .descripcion_personal .fas {
+    font-size: 12px;
+  }
+
   .section_descriptivo_noticias h3 {
-    font-size: 25px; }
+    font-size: 25px;
+  }
+
   .section_descriptivo_noticias p {
-    font-size: 15px; }
+    font-size: 15px;
+  }
+
   .img_noticias {
     width: 75%;
-    height: auto; }
+    height: auto;
+  }
+
   .footer_general {
-    align-content: space-between; }
-    .footer_general .footer_formulario {
-      margin-top: 51px; }
-      .footer_general .footer_formulario input {
-        font-size: 10px; }
-    .footer_general .parteDerecha .comentario {
-      width: 100%; }
-    .footer_general .btn_confirmar {
-      margin-left: 85px; } }
+    align-content: space-between;
+  }
+
+  .footer_general .footer_formulario {
+    margin-top: 51px;
+  }
+
+  .footer_general .footer_formulario input {
+    font-size: 10px;
+  }
+
+  .footer_general .parteDerecha .comentario {
+    width: 100%;
+  }
+
+  .footer_general .btn_confirmar {
+    margin-left: 85px;
+  }
+}

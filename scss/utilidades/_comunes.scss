@@ -4,7 +4,7 @@ p {
 .descripcion {
     display: inline-block;
     color: $colorLetras;
-    text-align: center;
+    text-align: map-get($estilos, centrado);
     font-weight: normal;
 }
 
@@ -17,6 +17,6 @@ p {
 }
 
 .alineado {
-    align-self: center;
+    align-self: map-get($estilos, centrado);
     font-size: unset;
 }

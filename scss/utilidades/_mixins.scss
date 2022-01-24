@@ -1,0 +1,28 @@
+@mixin ajustes_background {
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@mixin secciones_descriptivas {
+    display: flex;
+    text-align: map-get($estilos, centrado);
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: map-get($estilos, centrado);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 400px;
+}
+
+@mixin animaciones_entrada-titulo {
+    font-size: 40px;
+    animation-name: backInRight;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@mixin animaciones_entrada-descripcion {
+    font-size: 20px;
+    animation: backInLeft;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}

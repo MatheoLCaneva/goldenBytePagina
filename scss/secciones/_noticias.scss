@@ -1,28 +1,15 @@
 .section_descriptivo_noticias {
     background: -webkit-linear-gradient(to right, $gradienteIzquierdo, $gradienteIzquierdo);
     background: linear-gradient(to right, $gradienteIzquierdo, $gradienteDerecho), url(../img/mundo.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    display: flex;
-    text-align: center;
-    font-weight: bold;
-    height: 400px;
-    flex-direction: column;
-    justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    @include ajustes_background;
+    @include secciones_descriptivas;
+    background-position: map-get($estilos, centrado);
 
     h3{
-        font-size: 40px;
-        animation-name: backInRight;
-        animation-duration: 1s;
-        animation-iteration-count: 1;
+        @include animaciones_entrada-titulo;
     }
     p{
-        font-size: 20px;
-        animation-name: backInLeft;
-        animation-duration: 1s;
-        animation-iteration-count: 1;
+        @include animaciones_entrada-descripcion;
     }
 
 }

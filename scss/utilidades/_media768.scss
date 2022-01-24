@@ -1,19 +1,23 @@
 @media (max-width:768px) {
-    .navbar_alineacion{
-        .navbar-nav{
-            .efecto_subrayado{
+    .navbar_alineacion {
+        .navbar-nav {
+            .efecto_subrayado {
                 background-image: none;
                 transition: none;
             }
         }
     }
 
-    .section_descriptivo h1 {
-        font-size: 35px;
-    }
+    $textos :(
+        h1:35px,
+        p:15px
+    );
 
-    .section_descriptivo p {
-        font-size: 15px;
+    @each $texto,
+    $tamaño in $textos {
+        .section_descriptivo #{$texto} {
+            font-size: $tamaño;
+        }
     }
 
     .divMainDescripcion h4 {
@@ -25,30 +29,30 @@
         grid-template-columns: 1fr;
         grid-template-rows: .3fr 1fr 1fr 1fr;
         grid-template-areas: "titulo""componentes""pc""codigo";
-        justify-items: center;
+        justify-items: map-get($estilos, centrado);
     }
 
     .listado_servicios {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: "primero""segundo""tercero";
-        justify-items: center;
+        justify-items: map-get($estilos, centrado);
         padding-left: 0%;
 
         .primer_servicio {
             flex-direction: column;
-            align-items: center;
+            align-items: map-get($estilos, centrado);
             margin-bottom: 0%;
         }
 
         .segundo_servicio {
             flex-direction: column;
-            align-items: center;
+            align-items: map-get($estilos, centrado);
             margin-bottom: 0%;
         }
 
         .tercer_servicio {
             flex-direction: column;
-            align-items: center;
+            align-items: map-get($estilos, centrado);
         }
 
         .alineado {
@@ -70,7 +74,7 @@
 
     .footer_general {
         flex-direction: column;
-        align-items: center;
+        align-items: map-get($estilos, centrado);
 
         .subrayado {
             font-size: 20px;
@@ -81,7 +85,7 @@
         }
 
         input {
-            font-size: small;
+            font-size: map-get($estilos, fuente-chica);
         }
 
         .footer_formulario {
@@ -102,11 +106,12 @@
         height: 200px;
     }
 
-    .galeria_titulo_fotos{
+    .galeria_titulo_fotos {
         font-size: medium;
     }
-    .galeria_descripcion_fotos{
-        font-size: small;
+
+    .galeria_descripcion_fotos {
+        font-size: map-get($estilos , fuente-chica );
     }
 
     .descripcion_presentacion {
@@ -134,7 +139,7 @@
     }
 
     .noticias_descripciones {
-        font-size: small;
+        font-size: map-get($estilos, fuente-chica );
     }
 
     .fechas {

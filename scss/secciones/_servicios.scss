@@ -3,7 +3,7 @@
     background: linear-gradient(to right, $gradienteIzquierdo, $gradienteDerecho), url(../img/fondoPce.jpg);
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
+    background-position: map-get($estilos, centrado);
 }
 
 
@@ -16,7 +16,7 @@
         "tercero";
     background-color: $colorPrincipal;
     padding: 65px 0 65px 65px;
-    align-items: center;
+    align-items: map-get($estilos, centrado);
 
     .primer_servicio {
         grid-area: primero;

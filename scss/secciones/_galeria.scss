@@ -17,8 +17,7 @@
     border-radius: 10%;
 
     figcaption {
-        background: linear-gradient(to right, $gradienteIzquierdoOscuro, $gradienteDerechoOscuro);
-        border-radius: 10%;
+        @extend .imghvr-zoom-out;
     }
 
     .img_galeria {

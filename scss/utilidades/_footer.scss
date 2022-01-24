@@ -1,5 +1,5 @@
 .footer_general {
-    text-align: center;
+    text-align: map-get($estilos, centrado);
     background-color: $colorPrincipal;
     display: flex;
     padding-top: 35px;

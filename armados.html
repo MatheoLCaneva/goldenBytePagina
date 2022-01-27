@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <title>Armados | GoldenByte</title>
+</head>
+
+<body class="body_armados">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"> <img src="./img/logo.png" alt="goldenByte"
+                        class="logoGolden d-none d-sm-inline-block">
+                    Golden
+                    Byte</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar_alineacion" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item active" href="./armados.html">Armado de Pc</a></li>
+                                <li><a class="dropdown-item" href="./reparaciones.html">Reparación de equipos</a></li>
+                                <li><a class="dropdown-item" href="#">Desarrollo de Páginas Web</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">Galería</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobre_mi.html">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/pcBlancaArmado.jpg" class="d-block w-100 img_carrousel" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Cotizacion de Pc</h5>
+                        <p>Te asesoramos hasta que elijas la Pc ideal</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/placa.jpg" class="d-block w-100 img_carrousel" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Armamos tu Pc</h5>
+                        <p>Nos encargamos de entregarte tu equipo listo para funcionar</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/setup.jpg" class="d-block w-100 img_carrousel" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Seguimiento post-venta</h5>
+                        <p>Nos contactas cuando necesites para que podamos brindarte asistencia cuando requieras</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <section class="section_descripcion-armados mt-5 pb-5">
+            <h1>Cotización, Armado y Venta de Pc</h1>
+            <img src="./img/desk-illustration.svg" alt="ilustracion-escritorio" height="200px" width="auto"">
+            <p>En Golden Byte nos enfocamos en brindarte un servicio acorde a tus necesidades. Por eso contamos con las
+                capacidades y herramientas para ofrecerte la Pc ideal, al mejor precio. Contamos con
+                una amplia categoría de equipos y componentes para que encuentres el que mejor coincida con tus gustos y
+                necesidades.
+                Queremos que te lleves un servicio impecable</p>
+        </section>
+
+        <!-- Aca se muestran los servicios listados -->
+        <div class=" container my-5 pt-5">
+            <h2 class="text-center mb-4">Nuestras opciones</h2>
+            <div class="row">
+                <div class="col-md-4 primer_opcion mx-3">
+                    <div class="text-center pb-4">
+                        <i class="fas fa-microchip fs-4 text-center"></i>
+                        <h3 class="fs-4 pt-3">Cotizaciones de armados y generales</h3>
+                    </div>
+                    <div class="primer_opcion-izquierda py-4">
+                        <h5>Sin costo</h5>
+                        <p>Precio</p>
+                    </div>
+                    <div class="primer_opcion-derecha py-4">
+                        <h5>24 Horas</h5>
+                        <p>Tiempo</p>
+                    </div>
+                </div>
+                <div class="col-md-4 primer_opcion mx-3">
+                    <div class="text-center pb-4">
+                        <i class="fa fa-desktop fs-4 text-center"></i>
+                        <h3 class="fs-4 pt-3">Armado (Componentes Propios)</h3>
+                    </div>
+                    <div class="primer_opcion-izquierda py-4">
+                        <h5>$1500</h5>
+                        <p>Precio</p>
+                    </div>
+                    <div class="primer_opcion-derecha py-4">
+                        <h5>24-48hs</h5>
+                        <p>Tiempo</p>
+                    </div>
+                </div>
+                <div class="col-md-4 primer_opcion mx-3">
+                    <div class="text-center pb-4">
+                        <i class="fas fa-hdd fs-4 text-center"></i>
+                        <h3 class="fs-4 pt-3">Armado (Componentes Nuestros)</h3>
+                    </div>
+                    <div class="primer_opcion-izquierda py-4">
+                        <h5>Precio Pc</h5>
+                        <p>Precio</p>
+                    </div>
+                    <div class="primer_opcion-derecha py-4">
+                        <h5>7-10 días</h5>
+                        <p>Tiempo</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <section class="py-5 container-fluid container-ajustes">
+                <h3 class="text-center mb-4">Descripción de nuestros servicios</h3>
+                <div class="section-descripciones">
+                    <div class="section-descripciones-primera">
+                        <img src="./img/gamingPersona.jpg" alt="" width="auto" height="240px">
+                        <div class="texto">
+                            <h4>Cotizaciones</h4>
+                            <p>Si querés solicitar un presupuesto, tenemos estas opciones: <br> Nos dejas la lista de
+                                componentes que querés tener en tu PC. <br> Nos indicas el tipo de Pc y tu presupuesto
+                                para que podamos armarte a medida lo que deseas</p>
+                        </div>
+                    </div>
+
+                    <div class="section-descripciones-segunda">
+                        <img src="./img/personaEscribiendo.jpg" alt="" width="auto" height="240px">
+                        <div class="texto">
+                            <h4>Armado de Pc (componentes propios)</h4>
+                            <p>El cliente tiene sus componentes comprados de antemano. <br> Se coordina un día en el que
+                                los traerá para que nosotros realicemos el armado completo, entregando la Pc lista para
+                                ser usada, con Windows y programas a elección</p>
+                        </div>
+                    </div>
+                    <div class="section-descripciones-tercera">
+                        <img src="./img/ventiladores.jpg" alt="" width="auto" height="240px">
+                        <div class="texto">
+                            <h4>Armado de Pc (componentes nuestros)</h4>
+                            <p>El cliente realiza una compra completa de la Pc a nuestro personal. Nosotros nos
+                                encargaremos de solicitar los componentes, y luego la Pc será
+                                armada para entregarse lista para usar, con
+                                Windows y programas a elección</p>
+                        </div>
+
+
+                    </div>
+                    <div class="section-descripciones-tercera">
+                        <img src="./img/notebookfoto.jpg" alt="" width="auto" height="240px">
+                        <div class="texto">
+                            <h4>Seguimiento Post-Venta</h4>
+                            <p>Luego de ser entregada la Pc, el cliente contará con 1 año de mantenimiento con 25% de
+                                descuento y garantía de proveedor por cada componente. Tendrá atención personalizada por
+                                cada consulta y seguimiento constante</p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <!-- Aplico un fondo general -->
+        <div class="footer_general">
+            <!-- Parte izquierda con datos de contacto -->
+            <div class="footer_contacto parteIzquierda">
+                <h2 class="estilos_contacto subrayado">Datos de Contacto</h2>
+                <h4 class="estilos_contacto alineacionContacto">Telefono</h4>
+                <a class="link" href="tel:1131883213">11-3188-3213</a>
+                <h4 class="estilos_contacto alineacionContacto">Email</h4>
+                <a class="link" href="mailto:matheocaneva@gmail.com">matheocaneva@gmail.com</a>
+            </div>
+            <div class="footer_formulario parteDerecha">
+                <!-- Formulario del lado derecho -->
+                <h2 class="subrayado estilos_contacto">Formulario de Contacto</h2>
+                <form action="#" method="get">
+                    <div class="parteIzquierda">
+                        <h5 class="estilos_contacto alineacionFormulario">Nombre</h5>
+                        <input type="text" name="nombre" required>
+                        <h5 class="estilos_contacto alineacionFormulario">Apellido</h5>
+                        <input type="text" name="apellido" required>
+                    </div>
+                    <div class="parteDerecha separacionForm">
+                        <h5 class=" estilos_contacto alineacionFormulario">Telefono</h5>
+                        <input type="tel" name="telefono" required>
+                        <h5 class=" estilos_contacto alineacionFormulario">Email</h5>
+                        <input type="email" name="email" required>
+                    </div>
+                    <h5 class="estilos_contacto alineacionFormulario">Comentarios</h5>
+                    <textarea name="comentario" id="" cols="30" rows="10" class="comentario"></textarea>
+                    <input class="btn_confirmar" type="submit" name="confirmar">
+                </form>
+            </div>
+        </div>
+        <div class="py-3 bg-light">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Servicios</a></li>
+                <li class="nav-item"><a href="./galeria.html" class="nav-link px-2 text-muted">Galería</a></li>
+                <li class="nav-item"><a href="./sobre_mi.html" class="nav-link px-2 text-muted">Nosotros</a></li>
+            </ul>
+            <p class="text-center text-muted">© 2021 Company, Inc Pagina creada por <a
+                    href="https://www.linkedin.com/in/matheocaneva/" target="_blank">Matheo</a>. Podes ver mis
+                proyectos en mi <a href="https://matheolcaneva.github.io/miPortfolio/" target="_blank">Portfolio</a>
+            </p>
+            </p>
+        </div>
+    </footer>
+    <a href="#"><i class="fas fa-angle-double-up fs-4 flecha-arriba"></i></a>
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

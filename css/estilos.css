@@ -164,13 +164,6 @@ p {
     text-align: center;
     font-size: 25px; }
 
-.body_servicios {
-  background: -webkit-linear-gradient(to right, rgba(43, 61, 79, 0.3), rgba(43, 61, 79, 0.3));
-  background: linear-gradient(to right, rgba(43, 61, 79, 0.3), rgba(189, 195, 199, 0.3)), url(../img/fondoPce.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center; }
-
 .img_carrousel {
   height: 500px;
   filter: brightness(30%); }
@@ -199,17 +192,17 @@ p {
     grid-area: descripcion;
     font-size: 1.1rem; }
 
-.container .primer_opcion {
-  padding: 0 5em;
+.container .row .primer_opcion {
+  padding: 0 1em;
   background-color: #f0efef;
   width: 30%; }
-  .container .primer_opcion .primer_opcion-izquierda {
+  .container .row .primer_opcion .primer_opcion-izquierda {
     float: left; }
-  .container .primer_opcion .primer_opcion-derecha {
+  .container .row .primer_opcion .primer_opcion-derecha {
     float: right; }
 
-.container .fas,
-.container .fa {
+.container .row .fas,
+.container .row .fa {
   background-color: lightblue;
   line-height: 80px;
   width: 80px; }
@@ -223,38 +216,19 @@ p {
 
 .container-ajustes {
   padding: 0 60px; }
-  .container-ajustes .section-descripciones {
-    display: grid;
-    grid-template-columns: 1fr 1fr; }
-    .container-ajustes .section-descripciones .section-descripciones-primera, .container-ajustes .section-descripciones .section-descripciones-segunda, .container-ajustes .section-descripciones .section-descripciones-tercera {
-      display: flex; }
-    .container-ajustes .section-descripciones .section-descripciones-tercera {
-      flex-direction: row-reverse; }
-    .container-ajustes .section-descripciones .texto {
-      background-color: #f0efef;
-      padding: 30px 30px 0 30px;
-      font-size: smaller; }
-      .container-ajustes .section-descripciones .texto h4 {
-        font-size: 1.2rem; }
-
-.listado_servicios {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "primero" "segundo" "tercero";
-  background-color: #f0efef;
-  padding: 65px 0 65px 65px;
-  align-items: center; }
-  .listado_servicios .primer_servicio {
-    grid-area: primero;
+  .container-ajustes .section-descripciones .section-descripciones-primera, .container-ajustes .section-descripciones .section-descripciones-segunda, .container-ajustes .section-descripciones .section-descripciones-cuarta, .container-ajustes .section-descripciones .section-descripciones-tercera {
     display: flex;
-    margin-bottom: 69px; }
-  .listado_servicios .segundo_servicio {
-    grid-area: segundo;
-    display: flex;
-    margin-bottom: 45px; }
-  .listado_servicios .tercer_servicio {
-    grid-area: tercero;
-    display: flex; }
+    margin-bottom: 30px; }
+  .container-ajustes .section-descripciones .section-descripciones-segunda, .container-ajustes .section-descripciones .section-descripciones-cuarta {
+    flex-direction: row-reverse; }
+  .container-ajustes .section-descripciones .texto {
+    background-color: #f0efef;
+    padding: 70px 30px 0 30px;
+    font-size: medium;
+    width: 100%;
+    text-align: center; }
+    .container-ajustes .section-descripciones .texto h4 {
+      font-size: 1.2rem; }
 
 .section_descriptivo_galeria {
   background: linear-gradient(to left, #d7d2cc, #304352);
@@ -314,6 +288,25 @@ p {
   .descripcion_personal .texto_normal {
     font-weight: normal; }
 
+@media (max-width: 992px) {
+  .section_descripcion-armados {
+    padding: 0 19px; }
+  .container .row {
+    justify-content: center; }
+    .container .row .primer_opcion {
+      width: 70%;
+      margin-bottom: 30px; }
+  .container-ajustes .section-descripciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .container-ajustes .section-descripciones .section-descripciones-primera, .container-ajustes .section-descripciones .section-descripciones-segunda, .container-ajustes .section-descripciones .section-descripciones-cuarta, .container-ajustes .section-descripciones .section-descripciones-tercera {
+      flex-direction: column;
+      width: 55%; }
+    .container-ajustes .section-descripciones .texto {
+      padding: 39px 30px 30px 30px;
+      font-size: smaller; } }
+
 @media (max-width: 768px) {
   .navbar_alineacion .navbar-nav .efecto_subrayado {
     background-image: none;
@@ -325,29 +318,6 @@ p {
   .divMainDescripcion h4 {
     width: 248px;
     font-size: 20px; }
-  .main_div_servicios {
-    grid-template-columns: 1fr;
-    grid-template-rows: .3fr 1fr 1fr 1fr;
-    grid-template-areas: "titulo" "componentes" "pc" "codigo";
-    justify-items: center; }
-  .listado_servicios {
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "primero" "segundo" "tercero";
-    justify-items: center;
-    padding-left: 0%; }
-    .listado_servicios .primer_servicio {
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 0%; }
-    .listado_servicios .segundo_servicio {
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 0%; }
-    .listado_servicios .tercer_servicio {
-      flex-direction: column;
-      align-items: center; }
-    .listado_servicios .alineado {
-      font-size: 13px; }
   .imgServicios {
     height: 150px;
     width: 150px;
@@ -393,7 +363,14 @@ p {
   .noticias_descripciones {
     font-size: small; }
   .fechas {
-    font-size: medium; } }
+    font-size: medium; }
+  .section_descripcion-armados {
+    grid-template-columns: 1fr;
+    grid-template-rows: .4fr 1fr 1fr;
+    grid-template-areas: "titulo" "descripcion" "imagen"; }
+  .container-ajustes .section-descripciones .section-descripciones-primera, .container-ajustes .section-descripciones .section-descripciones-segunda, .container-ajustes .section-descripciones .section-descripciones-cuarta, .container-ajustes .section-descripciones .section-descripciones-tercera {
+    flex-direction: column;
+    width: 90%; } }
 
 @media (max-width: 400px) {
   .section_descriptivo h1 {
@@ -452,4 +429,10 @@ p {
     .footer_general .parteDerecha .comentario {
       width: 100%; }
     .footer_general .btn_confirmar {
-      margin-left: 85px; } }
+      margin-left: 85px; }
+  .section_descripcion-armados img {
+    height: 150px; }
+  .container .row .primer_opcion {
+    width: 90%; }
+  .container-ajustes {
+    padding: 0; } }

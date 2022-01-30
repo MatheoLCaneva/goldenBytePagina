@@ -1,0 +1,35 @@
+@media (max-width:992px) {
+
+    .section_descripcion-armados {
+        padding: 0 19px;
+    }
+
+    .container {
+        .row {
+            justify-content: center;
+
+            .primer_opcion {
+                width: 70%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .container-ajustes {
+        .section-descripciones {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .section-descripciones-primera {
+                flex-direction: column;
+                width: 55%;
+            }
+
+            .texto {
+                padding: 39px 30px 30px 30px;
+                font-size: smaller;
+            }
+        }
+    }
+}

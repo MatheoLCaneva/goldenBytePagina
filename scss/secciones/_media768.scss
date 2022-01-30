@@ -8,10 +8,8 @@
         }
     }
 
-    $textos :(
-        h1:35px,
-        p:15px
-    );
+    $textos :(h1:35px,
+        p:15px);
 
     @each $texto,
     $tamaño in $textos {
@@ -23,41 +21,6 @@
     .divMainDescripcion h4 {
         width: 248px;
         font-size: 20px;
-    }
-
-    .main_div_servicios {
-        grid-template-columns: 1fr;
-        grid-template-rows: .3fr 1fr 1fr 1fr;
-        grid-template-areas: "titulo""componentes""pc""codigo";
-        justify-items: map-get($estilos, centrado);
-    }
-
-    .listado_servicios {
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: "primero""segundo""tercero";
-        justify-items: map-get($estilos, centrado);
-        padding-left: 0%;
-
-        .primer_servicio {
-            flex-direction: column;
-            align-items: map-get($estilos, centrado);
-            margin-bottom: 0%;
-        }
-
-        .segundo_servicio {
-            flex-direction: column;
-            align-items: map-get($estilos, centrado);
-            margin-bottom: 0%;
-        }
-
-        .tercer_servicio {
-            flex-direction: column;
-            align-items: map-get($estilos, centrado);
-        }
-
-        .alineado {
-            font-size: 13px;
-        }
     }
 
     .imgServicios {
@@ -111,7 +74,7 @@
     }
 
     .galeria_descripcion_fotos {
-        font-size: map-get($estilos , fuente-chica );
+        font-size: map-get($estilos, fuente-chica);
     }
 
     .descripcion_presentacion {
@@ -139,10 +102,25 @@
     }
 
     .noticias_descripciones {
-        font-size: map-get($estilos, fuente-chica );
+        font-size: map-get($estilos, fuente-chica);
     }
 
     .fechas {
         font-size: medium;
+    }
+
+    .section_descripcion-armados{
+        grid-template-columns: 1fr;
+        grid-template-rows: .4fr 1fr 1fr;
+        grid-template-areas: "titulo" "descripcion" "imagen" ;
+    }
+
+    .container-ajustes {
+        .section-descripciones {
+            .section-descripciones-primera {
+                flex-direction: column;
+                width: 90%;
+            }
+        }
     }
 }

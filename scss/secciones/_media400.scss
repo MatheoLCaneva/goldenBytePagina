@@ -84,29 +84,16 @@
     }
 
     .footer_general {
-        align-content: space-between;
+        flex-direction: column;
+        align-items: center;
 
-        .footer_formulario {
-            margin-top: 51px;
-
-            input {
-                font-size: 10px;
-            }
+        .alineacion_secciones{
+            margin-top: 2rem;
         }
 
-        .parteDerecha {
-
-            .comentario {
-                width: 100%;
-            }
+        .footer_contacto{
+            text-align: center;
         }
-
-
-
-        .btn_confirmar {
-            margin-left: 85px;
-        }
-
     }
 
     .section_descripcion-armados{

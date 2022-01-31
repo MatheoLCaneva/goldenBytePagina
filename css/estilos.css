@@ -260,7 +260,7 @@ p {
     background-color: white; }
 
 .descripcion_personal {
-  background-color: #f0efef;
+  background-color: white;
   padding: 60px 190px 57px 142px; }
   .descripcion_personal .contenedor_descripcion {
     display: grid;
@@ -325,21 +325,18 @@ p {
   .main_section_cierre h3 {
     font-size: 16px;
     padding: 0 79px; }
-  .footer_general {
-    flex-direction: column;
-    align-items: center; }
-    .footer_general .subrayado {
-      font-size: 20px; }
-    .footer_general .alineacionContacto {
+  .footer_general .subrayado {
+    font-size: 20px; }
+  .footer_general .alineacionContacto {
+    font-size: 16px; }
+  .footer_general input {
+    font-size: small; }
+  .footer_general .footer_formulario {
+    margin-top: 40px; }
+    .footer_general .footer_formulario .alineacionFormulario {
       font-size: 16px; }
-    .footer_general input {
-      font-size: small; }
-    .footer_general .footer_formulario {
-      margin-top: 40px; }
-      .footer_general .footer_formulario .alineacionFormulario {
-        font-size: 16px; }
-      .footer_general .footer_formulario .btn_confirmar {
-        margin-left: 116px; }
+    .footer_general .footer_formulario .btn_confirmar {
+      margin-left: 116px; }
   .img_galeria {
     width: 200px;
     height: 200px; }
@@ -421,15 +418,12 @@ p {
     width: 75%;
     height: auto; }
   .footer_general {
-    align-content: space-between; }
-    .footer_general .footer_formulario {
-      margin-top: 51px; }
-      .footer_general .footer_formulario input {
-        font-size: 10px; }
-    .footer_general .parteDerecha .comentario {
-      width: 100%; }
-    .footer_general .btn_confirmar {
-      margin-left: 85px; }
+    flex-direction: column;
+    align-items: center; }
+    .footer_general .alineacion_secciones {
+      margin-top: 2rem; }
+    .footer_general .footer_contacto {
+      text-align: center; }
   .section_descripcion-armados img {
     height: 150px; }
   .container .row .primer_opcion {

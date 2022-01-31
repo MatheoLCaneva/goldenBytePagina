@@ -36,9 +36,6 @@
 
 
     .footer_general {
-        flex-direction: column;
-        align-items: map-get($estilos, centrado);
-
         .subrayado {
             font-size: 20px;
         }

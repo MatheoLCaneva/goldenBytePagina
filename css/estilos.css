@@ -281,7 +281,8 @@ p {
     .descripcion_personal .contenedor_descripcion .descripcion_seguimiento {
       grid-area: seguimiento; }
   .descripcion_personal .alineacion_descripcion_personal {
-    text-align: center; }
+    text-align: center;
+    padding: 15px; }
   .descripcion_personal .far,
   .descripcion_personal .fas {
     font-size: 20px; }

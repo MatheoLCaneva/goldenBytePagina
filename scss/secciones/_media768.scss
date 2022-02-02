@@ -18,14 +18,19 @@
         }
     }
 
-    .divMainDescripcion h4 {
-        width: 248px;
-        font-size: 20px;
+    .divMainDescripcion {
+        h4 {
+            font-size: 25px;
+        }
+
+        p{
+            width: 90%;
+        }
     }
 
     .imgServicios {
-        height: 150px;
-        width: 150px;
+        height: 130px;
+        width: 130px;
         margin-bottom: 10px;
     }
 
@@ -106,10 +111,10 @@
         font-size: medium;
     }
 
-    .section_descripcion-armados{
+    .section_descripcion-armados {
         grid-template-columns: 1fr;
         grid-template-rows: .4fr 1fr 1fr;
-        grid-template-areas: "titulo" "descripcion" "imagen" ;
+        grid-template-areas: "titulo""descripcion""imagen";
     }
 
     .container-ajustes {

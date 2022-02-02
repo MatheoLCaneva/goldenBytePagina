@@ -51,12 +51,17 @@
     }
 
     .descripcion_personal {
-        grid-template-columns: 1fr;
-        grid-template-rows: .7fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "titulo""solProblemas""postVenta""resolucion""respuestas""seguimiento";
-        background-color: $colorPrincipal;
-        font-size: x-small;
-        padding: 30px 0;
+        .contenedor_descripcion {
+
+
+            grid-template-columns: 1fr;
+            grid-template-rows: .5fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: "titulo""solProblemas""postVenta""resolucion""respuestas""seguimiento";
+            background-color: $colorPrincipal;
+            font-size: x-small;
+            padding: 30px 0;
+            align-items: center;
+        }
 
         .titulo_descripcion_personal {
             font-size: 22px;
@@ -87,30 +92,30 @@
         flex-direction: column;
         align-items: center;
 
-        .alineacion_secciones{
+        .alineacion_secciones {
             margin-top: 2rem;
         }
 
-        .footer_contacto{
+        .footer_contacto {
             text-align: center;
         }
     }
 
-    .section_descripcion-armados{
-        img{
+    .section_descripcion-armados {
+        img {
             height: 150px;
         }
     }
 
-    .container{
-        .row{
-            .primer_opcion{
+    .container {
+        .row {
+            .primer_opcion {
                 width: 90%;
             }
         }
     }
 
-    .container-ajustes{
+    .container-ajustes {
         padding: 0;
     }
 }

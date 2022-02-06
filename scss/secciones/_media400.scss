@@ -1,5 +1,9 @@
 @media (max-width:400px) {
 
+    br{
+        display: none;
+    }
+
     .section_descriptivo h1 {
         font-size: 30px;
     }
@@ -9,12 +13,16 @@
     }
 
     .main_div_servicios {
-        grid-template-rows: 15vh 1.2fr 1.2fr 1fr;
+        grid-template-rows: 9vh 1.2fr 1.2fr 1fr;
         grid-template-areas: "titulo""componentes""pc""codigo";
         grid-template-columns: 1fr;
         justify-items: map-get($estilos, centrado);
         padding-bottom: 30px;
         padding-top: 35px;
+
+        br{
+            display: inline;
+        }
 
         .main_titulo_servicios {
             font-size: 19px;
@@ -46,7 +54,7 @@
     .descripcion_presentacion {
         .alineado_presentacion {
             font-size: 12px;
-            padding: 0 0 0 20px;
+            padding: 0 20px;
         }
     }
 

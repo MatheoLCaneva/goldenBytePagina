@@ -80,6 +80,10 @@
         &:hover{
             transform: scale(1.1);
             transition: ease 1s;
+
+            h5{
+                text-decoration: underline;
+            }
         }
     }
 

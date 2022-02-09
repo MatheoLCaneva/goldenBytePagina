@@ -29,21 +29,6 @@
         }
     }
 
-    .listado_servicios {
-        justify-items: map-get($estilos, centrado);
-        padding-left: 0;
-
-        .primer_servicio,
-        .segundo_servicio {
-            margin-bottom: 0%;
-        }
-
-        .alineado {
-            font-size: 12px;
-            padding: 0 35px;
-        }
-    }
-
     .main_section_cierre h3 {
         font-size: 15px;
         padding: 0%;

@@ -622,21 +622,6 @@ p {
     font-size: 19px;
   }
 
-  .listado_servicios {
-    justify-items: center;
-    padding-left: 0;
-  }
-
-  .listado_servicios .primer_servicio,
-  .listado_servicios .segundo_servicio {
-    margin-bottom: 0%;
-  }
-
-  .listado_servicios .alineado {
-    font-size: 12px;
-    padding: 0 35px;
-  }
-
   .main_section_cierre h3 {
     font-size: 15px;
     padding: 0%;
